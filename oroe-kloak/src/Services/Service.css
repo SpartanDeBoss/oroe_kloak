@@ -1,0 +1,15 @@
+.service-container{
+  background-color: rgb(233, 86, 37);
+
+}
+
+
+.service-info-container{
+  background-color: royalblue;
+}
+
+
+.service-info {
+  display: flex;
+    justify-content: center;
+}

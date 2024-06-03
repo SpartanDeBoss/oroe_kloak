@@ -1,0 +1,25 @@
+/* About.css */
+
+.about-container {
+  background-color: #aaff00;
+}
+
+.about-info-container {
+  display: block;
+  background-color: #425f69;
+  border-radius: 181px;
+  width: 700px;
+  margin: 51px 398px;
+  padding: 122px;
+}
+
+.about-info {
+  display: flex;
+  justify-content: center;
+}
+
+.about-info-paragraph {
+  font-size: 1em;
+  color: hsl(0, 33%, 96%);
+  line-height: 1.6;
+}

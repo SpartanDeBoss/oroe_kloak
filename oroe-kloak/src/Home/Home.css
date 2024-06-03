@@ -1,0 +1,47 @@
+
+
+.home-container {  
+}
+    
+/*background-image: url('../images/group.jpg');*/
+
+
+.home-info{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px;
+}
+
+.home-content{
+      display: flex;
+    flex-direction: column;
+    background-color: #3c5463;
+    height: 462px;
+}
+
+
+.home-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(19, 139, 55);
+  border-radius: 20px;
+  margin: 70px 50px;
+}
+
+
+
+
+.home-info-paragraph {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px;
+  color: black;
+  border-radius: 20px;
+}

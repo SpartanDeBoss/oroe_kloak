@@ -1,0 +1,27 @@
+/* Navbar.css */
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  z-index: 100;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a.active {
+  color: #f00;
+}
+
+nav a:hover {
+  color: #0f0;
+}
