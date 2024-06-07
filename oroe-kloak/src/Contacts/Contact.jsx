@@ -1,12 +1,12 @@
 import React from 'react';
-import './Contact.css'
+import './Contact.css';
 
 export default function Contact() {
   return (
     <div className="contact-container" id="contact">
       <div className="contact-info-container">
-        <h1 className="contact-info">Contact</h1>
-        <form className="contact-info-form">
+        <h1 className="contact-title">Contact</h1>
+        <form className="contact-form">
           <input type="text" id="name" name="name" placeholder="Name" />
           <input type="email" id="email" name="email" placeholder="Email" />
           <input
