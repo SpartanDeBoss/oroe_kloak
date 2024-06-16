@@ -1,8 +1,8 @@
 import React from 'react';
 import About from '../About/About';
-import Service from '../Services/Service';
 import Contact from '../Contacts/Contact';
 import './Home.css';
+import ServicePreview from '../ServicePreview/ServicePreview';
 
 export default function Home() {
   return (
@@ -23,10 +23,15 @@ export default function Home() {
             tilpasset et hvert behov.
           </p>
         </div>
-
-        <Service />
-        <About />
+        <div>
+          <ServicePreview />
+        </div>
+        <div>
+          <About />
+        </div>
+        <div>
         <Contact />
+        </div>
       </div>
     </div>
   );

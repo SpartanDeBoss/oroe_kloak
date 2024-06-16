@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Router, Link as RouterLink } from "react-router-dom";
 import './Navbar.css';
 
 
@@ -8,38 +9,24 @@ import './Navbar.css';
 export default function Navbar() {
   return (
     <nav>
-      <Link 
-      activeClass='active'
-      to='/'
-      spy={true}
-      smooth={true}
-      offset={-70}
-      duration={500}
-      >Home</Link>
-      <Link
+      <RouterLink to="/">Home</RouterLink>
+      <ScrollLink
       activeClass='active'
       to='about'
       spy={true}
       smooth={true}
       offset={-70}
       duration={500}
-      >About</Link>
-      <Link
-      activeClass='active'
-      to='services'
-      spy={true}
-      smooth={true}
-      offset={-70}
-      duration={500}
-      >Service</Link>
-      <Link
+      >About</ScrollLink>
+      <RouterLink to="/services">Services</RouterLink>
+      <ScrollLink
       activeClass='active'
       to='contact'
       spy={true}  
       smooth={true}
       offset={-70}
       duration={500}
-      >Contact</Link>
+      >Contact</ScrollLink>
     </nav>
   )
 }

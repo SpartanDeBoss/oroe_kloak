@@ -1,0 +1,36 @@
+/* src/components/Services/ServicePreview.css */
+.service-preview-container {
+  padding: 20px;
+  background-color: #ffffff;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto 40px;
+  transition: box-shadow 0.3s ease-in-out;
+  text-align: center;
+}
+
+.service-preview-container:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-preview-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.service-preview-images img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 10px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-preview-images img:hover {
+  transform: scale(1.05);
+}
