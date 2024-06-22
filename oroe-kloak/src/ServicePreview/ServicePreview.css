@@ -1,36 +1,47 @@
-/* src/components/Services/ServicePreview.css */
 .service-preview-container {
-  padding: 20px;
-  background-color: #ffffff;
-  margin-bottom: 40px;
+  background-color: #f9f9f9; /* Slightly lighter background */
+  padding: 40px 20px; /* More padding */
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  margin: 0 auto 40px;
-  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
   text-align: center;
-}
-
-.service-preview-container:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-width: 800px; /* Maximum width for better appearance on larger screens */
+  margin: auto; /* Center the container */
 }
 
 .service-preview-title {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #333;
-  font-weight: bold;
+  font-size: 2.5em; /* Larger title */
+  margin-bottom: 30px; /* More space below title */
+  color: #444; /* Slightly darker color */
 }
 
-.service-preview-images img {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 10px;
-  height: auto;
+.service-preview-images {
+  width: 100%; /* Full width */
+  height: auto; /* Flexible height */
+  max-height: 500px; /* Maximum height */
+  object-fit: cover;
   border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
 }
 
-.service-preview-images img:hover {
-  transform: scale(1.05);
+.slick-prev,
+.slick-next {
+  width: 40px; /* Larger buttons */
+  height: 40px; /* Larger buttons */
+  z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px; /* Larger icons */
+  color: black;
+}
+
+/* Make dots larger and add some margin */
+.slick-dots li button:before {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #000; /* Active dot color */
 }

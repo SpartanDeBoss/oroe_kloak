@@ -2,9 +2,11 @@ import React from 'react';
 import './About.css';
 import niels from '../images/niels.jpg';
 
+
 export default function About() {
-  return (
-    <div className="about-container" id="about">
+
+return (
+  <div className="about-container" id="about">
       <div className="about-info-container">
         <h1 className="about-title">About Me</h1>
         <div className="about-image">
@@ -20,6 +22,10 @@ export default function About() {
           lokalsamfundet. Jeg er bl.a. frivillig brandmand og formand for MC
           klubben.
         </p>
+      </div>
+
+      <div>
+        
       </div>
     </div>
   );

@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Contact.css';
 
 export default function Contact() {
+  const [callOption, setCallOption] = useState('');
+
+  const handleSelectChange = (e) => {
+    setCallOption(e.target.value);
+  };
+
   return (
     <div className="contact-container" id="contact">
       <div className="contact-info-container">
@@ -20,7 +26,12 @@ export default function Contact() {
             name="message"
             placeholder="Message"
           ></textarea>
-          <select id="get-a-call" name="get-a-call">
+          <select 
+            id="get-a-call" 
+            name="get-a-call"
+            value={callOption}
+            onChange={handleSelectChange}
+          >
             <option value="" disabled selected>
               Get a call
             </option>

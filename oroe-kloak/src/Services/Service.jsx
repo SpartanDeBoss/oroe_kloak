@@ -1,7 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
 import Group91 from '../images/Group-91.png';
-import Niels from '../images/Niels-1.png';
 import './Service.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -23,9 +22,9 @@ export default function Service() {
           <div>
             <img src={Group91} alt="Group-91" />
           </div>
-          <div>
+          {/* <div>
             <img src={Niels} alt="Niels-1" />
-          </div>
+          </div> */}
           <div>
             <img src={Group91} alt="Service 3" />
           </div>
