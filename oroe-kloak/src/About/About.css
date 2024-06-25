@@ -1,35 +1,101 @@
 .about-container {
-  background-color: #c3d2eb;
-  padding: 40px 20px;
+  display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 5px;
+    padding: 5px;
+    /* max-width: 1200px; */
+    margin: 28px;
+    max-width: 100%;
+    /* margin-top: 203px; */
+}
+
+.about-info-container{
+  margin-top: 35px;
+}
+
+.about-info-container,
+.commitment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.about-info-container {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.about-title {
-  font-size: 2em;
-  margin-bottom: 20px;
+.about-title, 
+.commitment-title {
   color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 70px;
 }
 
-.about-image {
+.about-image, 
+.commitment-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 
-.about-image img {
-  max-width: 100%;
+.about-image img, 
+.commitment-image img {
+  width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.about-paragraph {
-  font-size: 1.2em;
+.about-paragraph, 
+.commitment-paragraph {
+  color: #666;
   line-height: 1.6;
-  color: #555;
+  text-align: justify;
+  font-size: 26px;
+  margin: 113px;
+}
+
+
+@media (min-width: 768px) {
+  .about-info-container, 
+  .commitment-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-image, 
+  .commitment-image {
+    margin: 0 20px 0 0;
+  }
+
+  .about-text, 
+  .commitment-text {
+    flex: 1;
+    background-color: gainsboro;
+  }
+}
+
+.call-now-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #39ac6b;
+    padding: 10px 20px;
+    border-radius: 43px;
+    transition: background-color 0.3s ease;
+    width: 295px;
+    height: 55px;
+    margin-left: 626px;
+    margin-bottom: 64px;
+    font-size: 20px;
+}
+
+.call-now-link:hover {
+  background-color: #36d3a9; /* Darker blue on hover */
+}
+
+.call-now-link svg {
+  margin-right: 8px; /* Adds space between the icon and text */
 }

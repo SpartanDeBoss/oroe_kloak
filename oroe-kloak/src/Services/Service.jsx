@@ -19,8 +19,9 @@ export default function Service() {
       <div className="service-info-container">
         <h1 className="service-title">Our Services</h1>
         <Slider {...settings}>
-          <div>
+          <div className='service-image'>
             <img src={Group91} alt="Group-91" />
+            <div></div>
           </div>
           {/* <div>
             <img src={Niels} alt="Niels-1" />

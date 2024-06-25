@@ -7,7 +7,7 @@ import AboutPreview from '../AboutPreview/AboutPreview';
 export default function Home() {
   return (
     <div className="home-container">
-      <h1 className="home-title">Auto KloakMester</h1>
+      <h1 className="home-title">Aut. Kloakmester Niels Erland Nielsen</h1>
 
       <div className="home-content">
         <div className="home-service-preview">

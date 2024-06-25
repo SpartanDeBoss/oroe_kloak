@@ -15,7 +15,7 @@
 
 .service-info-container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 20px auto;
   text-align: center;
   padding: 20px;
 }
@@ -25,6 +25,7 @@
   margin-bottom: 20px;
   color: #333;
   font-weight: bold;
+  margin-top: 40px;
 }
 
 .slick-slider {
@@ -42,4 +43,8 @@
 
 .slick-slide img:hover {
   transform: scale(1.05);
+}
+
+.service-image{
+  margin-top: 35px;
 }
