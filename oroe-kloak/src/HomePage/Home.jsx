@@ -3,6 +3,8 @@ import Contact from '../Contacts/Contact';
 import './Home.css';
 import ServicePreview from '../ServicePreview/ServicePreview';
 import AboutPreview from '../AboutPreview/AboutPreview';
+import Testimonials from '../Testimonials/Testimonials';
+import BlogPreview from '../BlogPreview/BlogPreview';
 
 export default function Home() {
   return (
@@ -18,6 +20,10 @@ export default function Home() {
         <div className="about-preview">
           <AboutPreview />
         </div>
+
+        <Testimonials />
+        <BlogPreview />
+        
         <div id="contact">
           <Contact />
         </div>

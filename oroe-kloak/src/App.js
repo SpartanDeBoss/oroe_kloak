@@ -5,6 +5,7 @@ import Home from './HomePage/Home';
 import Service from './Services/Service';
 import Navbar from './Navbar/Navbar';
 import About from './About/About';
+import Footer from './Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/services" element={<Service />} />
           <Route path="/about" element={<About />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

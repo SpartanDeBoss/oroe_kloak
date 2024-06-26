@@ -3,18 +3,26 @@ import './AboutPreview.css';
 
 export default function AboutPreview() {
   return (
-    <div className="home-about-container">
+    <section className="home-about-container" aria-label="About Us">
       <h1 className="home-about-title">About</h1>
-      <p className="home-about-paragraph">
-        Alt i kloak og dræn! På Orø finder du aut. kloakmester Niels Erland
-        Nielsen og alle hans medarbejdere, som arbejder professionelt inden for
-        alt kloak arbejde; herunder tilslutning til offentlig kloak,
-        vedligeholdelse og totalløsninger indenfor bygeri. Yderligere udfører
-        vi: Tømrer arbejde fx udskiftning af vinduer og nye hegn/stakitter Flise
-        arbejde fx indkørsler og terasser Træfældning Anlæg af haver Maler
-        arbejde Vi samarbejder med andre fagfolk, herunder elektrikere og
-        VVS'ere så vi kan tilbyde en totalløsning tilpasset et hvert behov.
-      </p>
-    </div>
+      <article>
+        <p className="home-about-paragraph">
+          Alt i kloak og dræn! På Orø finder du aut. kloakmester Niels Erland Nielsen og alle hans medarbejdere, som arbejder professionelt inden for alt kloak arbejde; herunder tilslutning til offentlig kloak, vedligeholdelse og totalløsninger indenfor bygeri.
+        </p>
+        <p className="home-about-paragraph">
+          Yderligere udfører vi:
+        </p>
+        <ul className="home-about-services">
+          <li>Tømrer arbejde fx udskiftning af vinduer og nye hegn/stakitter</li>
+          <li>Flise arbejde fx indkørsler og terasser</li>
+          <li>Træfældning</li>
+          <li>Anlæg af haver</li>
+          <li>Maler arbejde</li>
+        </ul>
+        <p className="home-about-paragraph">
+          Vi samarbejder med andre fagfolk, herunder elektrikere og VVS'ere, så vi kan tilbyde en totalløsning tilpasset et hvert behov.
+        </p>
+      </article>
+    </section>
   );
 }

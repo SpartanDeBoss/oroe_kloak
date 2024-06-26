@@ -1,47 +1,46 @@
 .service-preview-container {
-  background-color: #f9f9f9; /* Slightly lighter background */
-  padding: 40px 20px; /* More padding */
+  background-color: #f9f9f9;
+  padding: 40px 20px; 
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
   text-align: center;
-  max-width: 800px; /* Maximum width for better appearance on larger screens */
-  margin: auto; /* Center the container */
+  max-width: 800px;
+  margin: auto;
 }
 
 .service-preview-title {
-  font-size: 2.5em; /* Larger title */
-  margin-bottom: 30px; /* More space below title */
-  color: #444; /* Slightly darker color */
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #444;
 }
 
 .service-preview-images {
-  width: 100%; /* Full width */
-  height: auto; /* Flexible height */
-  max-height: 500px; /* Maximum height */
+  width: 100%;
+  height: auto;
+  max-height: 500px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .slick-prev,
 .slick-next {
-  width: 40px; /* Larger buttons */
-  height: 40px; /* Larger buttons */
+  width: 40px;
+  height: 40px;
   z-index: 1;
-}
+} 
 
 .slick-prev:before,
 .slick-next:before {
-  font-size: 40px; /* Larger icons */
+  font-size: 40px; 
   color: black;
 }
 
-/* Make dots larger and add some margin */
 .slick-dots li button:before {
   font-size: 12px;
   margin-top: 10px;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #000; /* Active dot color */
+  color: #000;
 }
