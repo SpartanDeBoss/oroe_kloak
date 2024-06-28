@@ -10,9 +10,16 @@ export default function Contact() {
 
   return (
     <div className="contact-container" id="contact">
-      <div className="contact-info-container">
-        <h1 className="contact-title">Contact</h1>
-        <div className="contact-info card">
+      <h1 className="contact-title">Contact</h1>
+      <div className="contact-content">
+        <div className="contact-logo">
+          <img
+            src="https://st.depositphotos.com/1431107/3046/v/450/depositphotos_30462385-stock-illustration-vector-contact-icons.jpg"
+            alt="Contact Icons"
+            className="contact-icons"
+          />
+        </div>
+        <div className="contact-form-container">
           <form className="contact-form">
             <input type="text" id="name" name="name" placeholder="Name" />
             <input type="email" id="email" name="email" placeholder="Email" />

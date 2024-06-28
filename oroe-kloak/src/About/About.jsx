@@ -14,11 +14,11 @@ export default function About() {
           <h1 className="about-title">About Us</h1>
           <p className="about-paragraph">
             Jeg flyttede til Orø i 1990 og faldt for Ø-livet. Jeg har arbejdet
-            inden for byggeri fra jeg var 18 år. Jeg er uddannet
-            bygningsstruktør, kloakmester og brandmand. I 2002 startede jeg som
-            selvstændig, hvor jeg primært arbejder kun på Orø. Siden da er vi
+            inden for byggeri siden jeg var 18 år. Jeg er uddannet
+            bygningsinstruktør, kloakmester og brandmand. I 2002 startede jeg som
+            selvstændig, hvor jeg primært arbejdede på Orø. Siden da er vi
             vokset, vi er blevet flere medarbejdere og vi udfører arbejde på
-            hele Sjælland. Jeg er gift med Zuzanne, vi bor her på Orø, hvor jeg
+            hele Sjælland. Jeg er gift med Zuzanne og vi bor her på Orø, hvor jeg
             er meget engageret i lokalsamfundet. Jeg er bl.a. frivillig
             brandmand og formand for MC klubben.
           </p>

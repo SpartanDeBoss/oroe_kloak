@@ -1,0 +1,31 @@
+.drain-cleaning-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.drain-cleaning-container h1 {
+  color: #005792;
+  text-align: center;
+}
+
+.drain-cleaning-container p,
+.drain-cleaning-container li {
+  color: #333;
+  line-height: 1.6;
+}
+
+.drain-cleaning-container ul {
+  margin: 20px 0;
+}
+
+.drain-cleaning-container li {
+  margin-bottom: 10px;
+}
+
+.drain-cleaning-container strong {
+  color: #0077B6;
+}

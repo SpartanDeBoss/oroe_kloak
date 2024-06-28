@@ -1,33 +1,114 @@
-/* Navbar.css */
-
-nav {
+/* nav {
   display: flex;
+  align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
+  height: 60px;
   background-color: #333;
-  padding: 10px 0;
+  padding: 0 20px;
   z-index: 100;
-  margin-bottom: 20px;
 }
 
 nav a {
   color: #fff;
-  margin: 0 10px;
+  margin: 0 15px;
   text-decoration: none;
   transition: color 0.3s ease;
+  font-family: philosopher, sans-serif;
+  font-size: 1.6em;
 }
 
+nav a.active, nav a:focus {
+  color: #4CAF50;
+}
 
-
-
-
-
-
-nav a.active {
-  color: #f00;
+.call-now{
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: philosopher, sans-serif;
+  font-size: 1.6em;
 }
 
 nav a:hover {
-  color: #0f0;
+  color: #dd3232;
+} */
+
+:root {
+  --nav-bg-color: #333;
+  --nav-text-color: #fff;
+  --nav-text-hover-color: #dd3232;
+  --nav-text-active-color: #4CAF50;
+  --nav-font-family: philosopher, sans-serif;
+  --nav-font-size: 1.6em;
+  --nav-padding: 0 20px;
+  --nav-link-margin: 0 15px;
+  --nav-height: 60px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: var(--nav-height);
+  background-color: var(--nav-bg-color);
+  padding: var(--nav-padding);
+  z-index: 100;
+}
+
+nav a, .call-now-link {
+  color: var(--nav-text-color);
+  margin: var(--nav-link-margin);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: var(--nav-font-family);
+  font-size: var(--nav-font-size);
+}
+
+nav a.active, nav a:focus, nav a:hover, .call-now-link:hover {
+  color: var(--nav-text-active-color);
+}
+
+.call-now-link-navbar {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #39ac6b;
+    padding: 10px 20px;
+    border-radius: 43px;
+    transition: background-color 0.3s ease;
+    width: 260px;
+    height: 30px;
+    padding-right: 54px;
+    margin-right: 53px;
+    font-size: 22px;
+}
+
+nav a:hover {
+  color: var(--nav-text-hover-color);
+}
+
+.call-now {
+  margin-left: auto; /* Pushes the call button to the right */
+}
+
+/* Accessibility: Ensure focus styles are visible */
+nav a:focus {
+  outline: 2px solid var(--nav-text-active-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav {
+    padding: 10px;
+  }
+
+  nav a, .call-now-link {
+    font-size: 1.2em; /* Smaller font size on mobile */
+    margin: 0 10px;
+  }
 }

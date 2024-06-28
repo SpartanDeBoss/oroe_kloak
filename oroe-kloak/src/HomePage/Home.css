@@ -1,36 +1,72 @@
+:root {
+  /* Color scheme */
+  --text-color-main: #333;
+  --text-color-secondary: #555;
+  --background-color: #f9f9f9;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+
+  /* Spacing */
+  --space-xs: 20px;
+  --space-sm: 40px;
+
+  /* Typography */
+  --font-size-large: 3em;
+  --font-size-medium: 1.2em;
+  --line-height: 1.6;
+
+  /* Borders */
+  --border-radius: 8px;
+}
+
 .home-container {
   margin: 0;
-  padding: 20px 0; /* Keeps padding at the top and bottom, removes it from the sides */
+  padding: var(--space-xs) 0; /* Consistent spacing at the top and bottom */
+  background-image: url('../images/IMG-16.jpg');
+  font-family: philosopher, sans-serif;
+
 }
 
 .home-title {
-  font-size: 3em;
+  font-size: 55px;
+  font-weight: bold;
   text-align: center;
-  color: #333;
-  margin-bottom: 20px;
+  margin: 117px;
 }
 
 .home-content {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: var(--space-sm);
 }
 
 .home-info-container {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color);
+  padding: var(--space-xs);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px var(--shadow-color);
 }
 
 .home-info-paragraph {
-  font-size: 1.2em;
-  line-height: 1.6;
-  color: #555;
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height);
+  color: var(--text-color-secondary);
 }
 
-.home-service-preview,
-#about,
-#contact {
+.about-preview,
+.testimonials,
+.blog-preview {
   margin-top: 40px;
+}
+
+.about-preview p,
+.testimonials p,
+.blog-preview p{
+  font-size: 30px;
+  line-height: 1.6;
+  font-family: philosopher, sans-serif;
+}
+
+#contact {
+  border-radius: 10px;
+  font-size: 24px;
 }

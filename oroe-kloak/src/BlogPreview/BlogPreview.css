@@ -23,7 +23,7 @@
 
 /* Individual blog post card styling */
 .blog-post {
-  background-color: #fff;
+  background-color:#eeeaf8;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -31,14 +31,14 @@
 }
 
 .blog-post h3 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: #333;
 }
 
 .blog-post p {
-  font-size: 1em;
-  color: #666;
-  margin: 10px 0 20px;
+    font-size: 1.33em;
+    color: #b74c4c;
+    margin: 10px 0 20px;
 }
 
 .blog-post .read-more {

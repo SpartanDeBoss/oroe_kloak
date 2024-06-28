@@ -3,6 +3,7 @@ import './ServicePreview.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
+import '../images/IMG-16.jpg';
 
 function NextArrow(props) {
   const { className, style, onClick } = props;
@@ -40,7 +41,6 @@ function importAllImages(r) {
   return r.keys().map(r);
 }
 
-// Dynamically import all jpg images from the images directory
 const images = importAllImages(require.context('../images', false, /\.(jpg)$/));
 
 export default function ServicePreview() {

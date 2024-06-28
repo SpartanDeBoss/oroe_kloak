@@ -1,0 +1,31 @@
+.grease-trap-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grease-trap-container h1 {
+  color: #005792;
+  text-align: center;
+}
+
+.grease-trap-container p,
+.drain-cleaning-container li {
+  color: #333;
+  line-height: 1.6;
+}
+
+.grease-trap-container ul {
+  margin: 20px 0;
+}
+
+.grease-trap-container li {
+  margin-bottom: 10px;
+}
+
+.grease-trap-container strong {
+  color: #0077b6;
+}

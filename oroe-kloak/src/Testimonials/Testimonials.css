@@ -1,12 +1,12 @@
 /* General styling for the container */
 .testimonials-container {
   padding: 40px;
-  background-color: #f9f9f9;
+  background-color: cadetblue;
   text-align: center;
 }
 
 .testimonial-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
   color: #333;
 }
@@ -51,7 +51,7 @@
 
 .testimonial-content p {
   margin: 20px 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #555;
 }
 

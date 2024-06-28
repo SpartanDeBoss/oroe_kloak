@@ -21,11 +21,12 @@
 }
 
 .service-title {
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 20px;
   color: #333;
   font-weight: bold;
   margin-top: 40px;
+  font-family: philosopher, sans-serif;
 }
 
 .slick-slider {
