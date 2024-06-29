@@ -40,7 +40,7 @@ export default function Contact() {
               value={callOption}
               onChange={handleSelectChange}
             >
-              <option value="" disabled selected>
+              <option value="" disabled>
                 Get a call
               </option>
               <option value="yes">Yes</option>
