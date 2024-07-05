@@ -15,12 +15,12 @@ export default function About() {
           <p className="about-paragraph">
             Jeg flyttede til Orø i 1990 og faldt for Ø-livet. Jeg har arbejdet
             inden for byggeri siden jeg var 18 år. Jeg er uddannet
-            bygningsinstruktør, kloakmester og brandmand. I 2002 startede jeg som
-            selvstændig, hvor jeg primært arbejdede på Orø. Siden da er vi
+            bygningsinstruktør, kloakmester og brandmand. I 2002 startede jeg
+            som selvstændig, hvor jeg primært arbejdede på Orø. Siden da er vi
             vokset, vi er blevet flere medarbejdere og vi udfører arbejde på
-            hele Sjælland. Jeg er gift med Zuzanne og vi bor her på Orø, hvor jeg
-            er meget engageret i lokalsamfundet. Jeg er bl.a. frivillig
-            brandmand og formand for MC klubben.
+            hele Sjælland. Jeg er gift med Zuzanne og vi bor her på Orø, hvor
+            jeg er meget engageret i lokalsamfundet. Jeg er bl.a. frivillig
+            brandmand.
           </p>
           <div>
             <a
@@ -38,14 +38,13 @@ export default function About() {
         <div className="commitment-text">
           <h1 className="commitment-title">Our Commitment to the Community</h1>
           <p className="commitment-paragraph">
-            In addition to our professional endeavors, we are proud to
-            contribute to the safety and well-being of Orø. I am a dedicated
-            member of the firefighters here in Orø. This role underscores our
-            commitment to community service and reflects the core values of
-            bravery, integrity, and teamwork that we bring to our business every
-            day. Through our involvement with the fire station, we aim to
-            support and protect our community, ensuring a safer environment for
-            all.
+            Ud over vores professionelle bestræbelser er vi stolte af bidrage
+            til Orøs sikkerhed og trivsel. Jeg er en dedikeret medlem af
+            brandmændene her i Orø. Denne rolle understreger vores engagement i
+            samfundstjeneste og afspejler kerneværdierne i tapperhed, integritet
+            og teamwork, som vi tilfører vores virksomhed hver dag. Gennem vores
+            engagement i brandstationen tilstræber vi støtte og beskytte vores
+            samfund og sikre et sikrere miljø for alle.
           </p>
         </div>
         <div className="commitment-image">

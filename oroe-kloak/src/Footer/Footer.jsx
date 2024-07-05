@@ -20,7 +20,7 @@ export default function Footer() {
         <address className="footer-info">
           <p>
             <a href="tel:+4521649856" aria-label="Call us">
-              <CallIcon aria-hidden="true" /> 20 22 22 22
+              <CallIcon aria-hidden="true" /> +4521649856
             </a>
           </p>
           <p>
@@ -35,7 +35,7 @@ export default function Footer() {
             <PlaceIcon aria-hidden="true" /> Bygaden 43, 4305 Orø
           </p>
           <p>
-            <DomainIcon aria-hidden="true" /> CRV-nr: 26803152
+            <DomainIcon aria-hidden="true" /> CVR-nr: 26803152
           </p>
         </address>
         <div className="footer-newsletter">

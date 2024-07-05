@@ -29,6 +29,30 @@
   font-family: philosopher, sans-serif;
 }
 
+.service-list {
+  text-align: left;
+  font-size: 1.2em;
+  color: #555;
+  margin: 0 auto 40px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.service-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.service-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #333;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
 .slick-slider {
   max-width: 100%;
   margin: 0 auto;
@@ -46,6 +70,6 @@
   transform: scale(1.05);
 }
 
-.service-image{
+.service-image {
   margin-top: 35px;
 }
