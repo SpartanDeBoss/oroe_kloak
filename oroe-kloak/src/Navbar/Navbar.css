@@ -106,9 +106,12 @@ nav a:focus {
   nav {
     padding: 10px;
   }
+.call-now-link-navbar{
+  display: none;
 
-  nav a, .call-now-link {
-    font-size: 1em; /* Smaller font size on mobile */
+}
+  /* nav a, .call-now-link {
+    font-size: 1em;
     margin: 0 10px;
-  }
+  } */
 }
