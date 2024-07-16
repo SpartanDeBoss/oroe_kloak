@@ -3,35 +3,37 @@ import Slider from 'react-slick';
 import './Testimonials.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import image17 from '../images/IMG-17.jpeg';
+
 
 const testimonials = [
   {
     id: 1,
-    author: 'Nana & Emma',
+    author: 'Nanna & Emma',
     content: 'Excellent service! Highly recommend.',
     rating: 5,
-    image: 'path/to/image1.jpg', // Add image paths here
+    image: image17, // Add image paths here
   },
   {
     id: 2,
     author: 'John Smith',
     content: 'Very professional and thorough.',
     rating: 4,
-    image: 'path/to/image2.jpg',
+    image: '../images/IMG-17.jpeg',
   },
   {
     id: 3,
-    author: 'Jane Doe',
+    author: 'Hardy & Grethe',
     content: 'Quick and efficient service.',
     rating: 4,
     image: 'path/to/image3.jpg',
   },
   {
     id: 4,
-    author: 'David Brown',
+    author: 'Zuzanne',
     content: 'Great job!',
     rating: 4.5,
-    image: 'path/to/image4.jpg',
+    // image: image18,
   },
 ];
 
@@ -55,7 +57,7 @@ function Testimonials() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 3000,
   };
 
   return (

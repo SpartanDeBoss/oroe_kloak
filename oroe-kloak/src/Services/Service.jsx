@@ -19,15 +19,27 @@ export default function Service() {
     <div className="service-container" id="ourService">
       <div className="service-info-container">
         <h1 className="service-title">Our Services</h1>
+        <div>
+          <ul className="service-list">
+            <li>Kloak arbejde</li>
+            <li>Tilslutning til offentlig kloak</li>
+            <li>Dræn arbejde</li>
+            <li>Vedligeholdelse af kloak og dræn</li>
+            <li>Lokalisering af skade med videokamera</li>
+            <li>Alt i forsikringsskader</li>
+            <li>Alt i vand og frostskader</li>
+            <li>Tømrer arbejde</li>
+            <li>Tilbygning og nybygning</li>
+            <li>Totalrenovering og nyopførelse af badeværelser</li>
+            <li>Asfalt arbejde</li>
+            <li>Belægnings opgaver</li>
+          </ul>
+        </div>
         <Slider {...settings}>
           <div className="service-image">
             <img src={IMG7} alt="IMG-7" />
-            <div></div>
           </div>
-          {/* <div>
-            <img src={Niels} alt="Niels-1" />
-          </div> */}
-          <div>
+          <div className="service-image">
             <img src={IMG8} alt="IMG-8." />
           </div>
         </Slider>

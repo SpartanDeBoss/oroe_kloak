@@ -13,7 +13,7 @@ export default function Navbar() {
       <RouterLink to="/">
         <HomeIcon />
       </RouterLink>
-      <RouterLink to="/about">About us</RouterLink>
+      <RouterLink to="/about">Om os</RouterLink>
       <RouterLink to="/services">Services</RouterLink>
       <RouterLink
         to="/"
@@ -29,8 +29,9 @@ export default function Navbar() {
           }, 100);
         }}
       >
-        Contact
+        Kontakt
       </RouterLink>
+      <RouterLink to="/workers">Medarbejdere</RouterLink>
 
       <div className="call-now">
         <a

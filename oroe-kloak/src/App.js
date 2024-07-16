@@ -12,6 +12,9 @@ import SewerRepair from './SewerRepairBlogPost/SewerRepair';
 import DrainCleaning from './DrainCleaningBlogPost/DrainCleaning';
 import SepticTankProblems from './SepticTankProblemsBlogPost/SepticTankProblems';
 import GreaseTrap from './GreaseTrapBlogPost/GreaseTrap';
+import WorkersList from './TheTeam/WorkersList';
+
+
 
 function App() {
   return (
@@ -22,6 +25,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Service />} />
           <Route path="/about" element={<About />} />
+          <Route path="/workers" element={<WorkersList />} />
           <Route
             path="/blog/sewer-maintenance"
             element={<RegularSewerMaintance />}
