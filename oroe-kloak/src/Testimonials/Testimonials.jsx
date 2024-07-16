@@ -23,14 +23,14 @@ const testimonials = [
   },
   {
     id: 3,
-    author: 'Jane Doe',
+    author: 'Hardy & Grethe',
     content: 'Quick and efficient service.',
     rating: 4,
     image: 'path/to/image3.jpg',
   },
   {
     id: 4,
-    author: 'David Brown',
+    author: 'Zuzanne',
     content: 'Great job!',
     rating: 4.5,
     // image: image18,

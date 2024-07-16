@@ -8,11 +8,12 @@
   /* Spacing */
   --space-xs: 20px;
   --space-sm: 40px;
+  --space-md: 60px;
 
   /* Typography */
   --font-size-large: 3em;
   --font-size-medium: 1.2em;
-  --line-height: 1.6;
+  --line-height: 1.2;
 
   /* Borders */
   --border-radius: 8px;
