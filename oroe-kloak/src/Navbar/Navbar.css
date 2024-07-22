@@ -102,16 +102,35 @@ nav a:focus {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   nav {
     padding: 10px;
   }
 .call-now-link-navbar{
   display: none;
 
-}
-  /* nav a, .call-now-link {
-    font-size: 1em;
-    margin: 0 10px;
-  } */
+} */
+
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 10px;
+    height: auto; /* Adjust height to fit content */
+  }
+
+  nav a, .call-now-link {
+    margin: 10px 0; /* Add margin between items */
+    font-size: 1.4em; /* Adjust font size for better readability */
+  }
+
+  .call-now-link-navbar {
+    display: none; /* Hide the call button on mobile */
+  }
+
+  .call-now {
+    margin-left: 0; /* Reset margin for the call button */
+  }
+
 }
