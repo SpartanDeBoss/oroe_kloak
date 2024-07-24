@@ -3,7 +3,6 @@ import './Contact.css';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
-  const [ callOption, setCallOption] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -12,67 +11,67 @@ export default function Contact() {
     getACall: '',
   });
 
+  const[statusMessage, setStatusMessage] = useState('');
+
   const publicKey = process.env.REACT_APP_PUBLIC_KEY;
-  const serviceID = process.env.REACT_APP_SERVICE_KEY;
-  const templateKey = process.env.REACT_APP_TEMPLATE_KEY;
+  const serviceID = process.env.REACT_APP_SERVICE_ID;
+  const templateID = process.env.REACT_APP_TEMPLATE_ID;
 
   useEffect(() => {
-    emailjs.init(publicKey);
-  }, [publicKey]);
+    console.log('Public Key:', publicKey);
+    console.log('Service ID:', serviceID);
+    console.log('Template ID:', templateID);
+    if (publicKey) {
+      emailjs.init(publicKey);
+    } else {
+      console.error('Public key is missing.');
+    }
+  }, [publicKey, serviceID, templateID]);
 
-  const handleSelectChange = (e) => {
-    setCallOption(e.target.value);
-  };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
       [name]: value,
-    })
-    );
-    console.log(formData);
+    }));
   };
 
-  const onChange = (e) => {
-    handleInputChange(e);
-    setCallOption(e.target);
-  };
+  const sendMail = (e) => {
+    e.preventDefault(); // Prevent the default form submission behavior
 
-  const initMail = () => {
-    emailjs.init({
-      publicKey: publicKey,
-      // Do not allow headless browsers
-      blockHeadless: true,
-      blockList: {
-        // Block the suspended emails
-        list: ['foo@emailjs.com', 'bar@emailjs.com'],
-        // The variable contains the email address
-        watchVariable: 'userEmail',
+    if (!serviceID || !templateID || !publicKey) {
+      console.error('Missing serviceID, templateID, or publicKey.');
+      return;
+    }
+
+    emailjs.send(serviceID, templateID, formData).then(
+      (response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setStatusMessage('Message sent successfully!');
+        setFormData({
+          name: '',
+          email: '',
+          telephone: '',
+          message: '',
+          getACall: '',
+        });
+
+        setTimeout(() => {
+          setStatusMessage('');
+        }, 7000);
       },
-    });
-  };
-
-  const sendMail = () => {
-    initMail();
-    emailjs
-      .send(serviceID, templateKey, formData, {
-        publicKey: publicKey,
-      })
-      .then(
-        (response) => {
-          console.log('SUCCESS!', response.status, response.text, response);
-        },
-        (error) => {
-          console.log('FAILED...', error);
-        }
-      );
-    console.log(formData, 'clicked');
+      (error) => {
+        console.log('FAILED...', error);
+        setStatusMessage('Failed to send message. Please try again later.');
+      }
+    );
   };
 
   return (
     <div className="contact-container" id="contact">
-      <h1 className="contact-title">Contact</h1>
+      <h1 className="contact-title">Kontakt</h1>
+      {statusMessage && <div className="status-message">{statusMessage}</div>}
       <div className="contact-content">
         <div className="contact-logo">
           <img
@@ -82,14 +81,15 @@ export default function Contact() {
           />
         </div>
         <div className="contact-form-container">
-          <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+          <form className="contact-form" onSubmit={sendMail}>
             <input
               type="text"
               id="name"
               name="name"
-              placeholder="Name"
+              placeholder="Navn"
               onChange={handleInputChange}
               value={formData.name}
+              required
             />
             <input
               type="email"
@@ -98,32 +98,39 @@ export default function Contact() {
               placeholder="Email"
               onChange={handleInputChange}
               value={formData.email}
+              required
             />
             <input
               type="tel"
               id="telephone"
               name="telephone"
-              placeholder="Telephone"
+              placeholder="Telefonnummer"
               onChange={handleInputChange}
               value={formData.telephone}
+              required
             />
             <textarea
               id="message"
               name="message"
-              placeholder="Message"
+              placeholder="Besked"
               onChange={handleInputChange}
               value={formData.message}
+              required
             ></textarea>
-            <select id="get-a-call" name="getACall" onChange={onChange}  value={formData.getACall}>
+            <select
+              id="get-a-call"
+              name="getACall"
+              onChange={handleInputChange}
+              value={formData.getACall}
+              required
+            >
               <option value="" disabled>
-                Get a call?
+                Ring til mig?
               </option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
+              <option value="yes">Ja</option>
+              <option value="no">Nej</option>
             </select>
-            <button type="submit" onClick={sendMail}>
-              Send
-            </button>
+            <button type="submit">Send</button>
           </form>
         </div>
       </div>

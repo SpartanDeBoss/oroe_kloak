@@ -1,6 +1,7 @@
 import emailjs from '@emailjs/browser';
+
 emailjs.init({
-  publicKey: 'YOUR_PUBLIC_KEY',
+  publicKey: process.env.REACT_APP_PUBLIC_KEY, // Ensure this matches your environment variable
   // Do not allow headless browsers
   blockHeadless: true,
   blockList: {

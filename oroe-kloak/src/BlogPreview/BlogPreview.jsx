@@ -50,7 +50,7 @@ const blogPosts = [
 export default function BlogPreview() {
   return (
     <section className="blog-preview">
-      <h2 className="blog-title">Latest From Our Blog</h2>
+      <h2 className="blog-title">Seneste fra vores blog</h2>
       <div className="blog-preview-container">
         {blogPosts.map((post) => (
           <article key={post.id} className="blog-post card">
