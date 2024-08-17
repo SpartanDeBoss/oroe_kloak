@@ -1,40 +1,3 @@
-/* nav {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 60px;
-  background-color: #333;
-  padding: 0 20px;
-  z-index: 100;
-}
-
-nav a {
-  color: #fff;
-  margin: 0 15px;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-family: philosopher, sans-serif;
-  font-size: 1.6em;
-}
-
-nav a.active, nav a:focus {
-  color: #4CAF50;
-}
-
-.call-now{
-  color: #fff;
-  margin: 0 15px;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-family: philosopher, sans-serif;
-  font-size: 1.6em;
-}
-
-nav a:hover {
-  color: #dd3232;
-} */
 
 :root {
   --nav-bg-color: #333;
@@ -102,16 +65,35 @@ nav a:focus {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   nav {
     padding: 10px;
   }
 .call-now-link-navbar{
   display: none;
 
-}
-  /* nav a, .call-now-link {
-    font-size: 1em;
-    margin: 0 10px;
-  } */
+} */
+
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 10px;
+    height: auto; /* Adjust height to fit content */
+  }
+
+  nav a, .call-now-link {
+    margin: 10px 0; /* Add margin between items */
+    font-size: 1.4em; /* Adjust font size for better readability */
+  }
+
+  .call-now-link-navbar {
+    display: none; /* Hide the call button on mobile */
+  }
+
+  .call-now {
+    margin-left: 0; /* Reset margin for the call button */
+  }
+
 }

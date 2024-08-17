@@ -61,7 +61,7 @@
 @media (min-width: 768px) {
   .about-info-container, 
   .commitment-container {
-    flex-direction: row;
+    flex-direction: grid;
     justify-content: space-between;
   }
 

@@ -38,24 +38,17 @@ export default function Footer() {
             <DomainIcon aria-hidden="true" /> CVR-nr: 26803152
           </p>
         </address>
-        <div className="footer-newsletter">
-          <input
-            type="email"
-            placeholder="Your email address"
-            aria-label="Email address"
-          />
-          <button type="submit">Subscribe</button>
-        </div>
+
         <div className="footer-quick-links">
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/about">About</RouterLink>
-          <RouterLink to="/services">Services</RouterLink>
-          <a href="#contact">Contact</a>
+          <RouterLink to="/">Hjem</RouterLink>
+          <RouterLink to="/about">Om</RouterLink>
+          <RouterLink to="/services">Tjenester</RouterLink>
+          <a href="#contact">Kontakt</a>
         </div>
       </div>
       <div className="footer-copyright">
-        © {new Date().getFullYear()} Aut. Kloakmester Niels Erland Nielsen. All
-        rights reserved.
+        © {new Date().getFullYear()} Aut. Kloakmester Niels Erland Nielsen. Alle
+        rettigheder forbeholdes.
       </div>
     </div>
   );

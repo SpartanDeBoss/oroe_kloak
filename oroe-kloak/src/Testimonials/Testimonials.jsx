@@ -62,7 +62,7 @@ function Testimonials() {
 
   return (
     <div className="testimonials-container">
-      <h2 className="testimonial-title">What Our Customers Say</h2>
+      <h2 className="testimonial-title">Hvad vores kunder siger</h2>
       <Slider {...settings} className="testimonials-slider">
         {testimonials.map((testimonial) => (
           <div key={testimonial.id} className="testimonial card">
