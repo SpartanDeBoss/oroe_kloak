@@ -5,16 +5,16 @@
 }
 
 .workers-list-title {
-    color: #000;
-    margin: 84px 36px;
-    font-family: philosopher, sans-serif;
-    font-size: 40px;
+  color: #000;
+  margin: 84px 36px;
+  font-family: philosopher, sans-serif;
+  font-size: 40px;
 }
 
 .top-worker-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 110px;
+  /* margin-bottom: px; */
 }
 
 .workers-container {
@@ -22,7 +22,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 120px;
-  margin-bottom: 130px;
+  margin: 50px 50px;
 }
 
 .worker-name {
@@ -33,11 +33,18 @@
 }
 
 .worker-image {
-    border-radius: 50%;
-    width: 280px;
-    height: 300px;
-    object-fit: cover;
-    margin-bottom: 10px;
+  border-radius: 50%;
+  width: 280px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.workers-list hr.separation-line {
+  border: 0;
+  border-top: 3px solid #0b0b0b;
+  margin: 1px auto; /* Space between the lines */
+  width: 80%; /* Make the lines a bit shorter */
 }
 
 @media (max-width: 768px) {

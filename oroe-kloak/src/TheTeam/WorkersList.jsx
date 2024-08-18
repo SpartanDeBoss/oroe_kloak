@@ -14,6 +14,10 @@ export default function ParentComponent() {
     { name: 'KP', imageSrc: KP, role: 'Designer' },
     { name: 'Flemming', imageSrc: Flemming, role: 'Manager' },
     { name: 'Mogens', imageSrc: Mogens, role: 'Engineer' },
+    { name: 'Mogens', imageSrc: Mogens, role: 'Engineer' },
+    { name: 'Mogens', imageSrc: Mogens, role: 'Engineer' },
+    { name: 'Mogens', imageSrc: Mogens, role: 'Engineer' },
+
     // Add more workers as needed
   ];
 
@@ -33,6 +37,8 @@ export default function ParentComponent() {
           role={topWorker.role}
         />
       </div>
+      <hr className='separation-line' />
+      <hr className='separation-line' />
       <div className="workers-container">
         {restWorkers.map((worker, index) => (
           <Worker

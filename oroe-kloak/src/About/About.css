@@ -99,3 +99,21 @@
 .call-now-link svg {
   margin-right: 8px; /* Adds space between the icon and text */
 }
+
+@media (max-width: 768px) {
+  .about-title, .commitment-title
+  {
+    font-size: 1.2em;
+  }
+  .call-now-link {
+    margin-left: auto; /* Pushes the call button to the right */
+  }
+
+  .about-paragraph, .commitment-paragraph {
+    font-size: 18px;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+}
