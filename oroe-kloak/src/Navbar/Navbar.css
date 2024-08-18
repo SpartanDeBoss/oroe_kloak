@@ -1,9 +1,8 @@
-
 :root {
   --nav-bg-color: #333;
   --nav-text-color: #fff;
   --nav-text-hover-color: #dd3232;
-  --nav-text-active-color: #4CAF50;
+  --nav-text-active-color: #4caf50;
   --nav-font-family: philosopher, sans-serif;
   --nav-font-size: 1.6em;
   --nav-padding: 0 20px;
@@ -23,7 +22,8 @@ nav {
   z-index: 100;
 }
 
-nav a, .call-now-link {
+nav a,
+.call-now-link {
   color: var(--nav-text-color);
   margin: var(--nav-link-margin);
   text-decoration: none;
@@ -32,23 +32,26 @@ nav a, .call-now-link {
   font-size: var(--nav-font-size);
 }
 
-nav a.active, nav a:focus, nav a:hover, .call-now-link:hover {
+nav a.active,
+nav a:focus,
+nav a:hover,
+.call-now-link:hover {
   color: var(--nav-text-active-color);
 }
 
 .call-now-link-navbar {
   display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #39ac6b;
-    padding: 10px 20px;
-    border-radius: 43px;
-    transition: background-color 0.3s ease;
-    width: 260px;
-    height: 30px;
-    padding-right: 54px;
-    margin-right: 53px;
-    font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  background-color: #39ac6b;
+  padding: 10px 20px;
+  border-radius: 43px;
+  transition: background-color 0.3s ease;
+  width: 260px;
+  height: 30px;
+  padding-right: 54px;
+  margin-right: 53px;
+  font-size: 22px;
 }
 
 nav a:hover {
@@ -76,14 +79,14 @@ nav a:focus {
 
 @media (max-width: 768px) {
   nav {
-    position: relative;
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the start */
+    display: flex;
+    justify-content: space-around;
     padding: 10px;
-    height: auto; /* Adjust height to fit content */
+    height: auto;
   }
 
-  nav a, .call-now-link {
+  nav a,
+  .call-now-link {
     margin: 10px 0; /* Add margin between items */
     font-size: 1.4em; /* Adjust font size for better readability */
   }
@@ -95,5 +98,4 @@ nav a:focus {
   .call-now {
     margin-left: 0; /* Reset margin for the call button */
   }
-
 }

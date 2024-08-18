@@ -72,3 +72,16 @@
   font-size: 24px;
 }
 
+@media (max-width: 768px) {
+ .home-title {
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    margin: 61px;
+    display: flex;
+}
+
+.about-preview p{
+  font-size: 1.3em;
+}
+}
