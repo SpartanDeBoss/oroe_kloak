@@ -1,42 +1,81 @@
+/* Root Variables */
 :root {
   --nav-bg-color: #333;
   --nav-text-color: #fff;
-  --nav-text-hover-color: #dd3232;
-  --nav-text-active-color: #4caf50;
+  --nav-text-hover-color: #dd3232; /* Hover color */
+  --nav-text-active-color: #4caf50; /* Active color */
   --nav-font-family: philosopher, sans-serif;
   --nav-font-size: 1.6em;
-  --nav-padding: 0 20px;
-  --nav-link-margin: 0 15px;
   --nav-height: 60px;
 }
 
+/* Navigation Bar Styling */
 nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   width: 100%;
   height: var(--nav-height);
   background-color: var(--nav-bg-color);
-  padding: var(--nav-padding);
+  padding: 0 20px;
   z-index: 100;
 }
 
-nav a,
-.call-now-link {
+/* Links Styling */
+nav a {
   color: var(--nav-text-color);
-  margin: var(--nav-link-margin);
   text-decoration: none;
-  transition: color 0.3s ease;
   font-family: var(--nav-font-family);
   font-size: var(--nav-font-size);
+  margin: 0 15px;
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
-nav a.active,
-nav a:focus,
+/* Hover State */
 nav a:hover,
-.call-now-link:hover {
-  color: var(--nav-text-active-color);
+.menu-items button:hover {
+  color: var(--nav-text-hover-color); /* Hover color */
+}
+
+/* Active State */
+nav a.active,
+.menu-items button.active {
+  color: var(--nav-text-active-color); /* Active color */
+}
+
+/* Menu Items */
+.menu-items {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.menu-items button {
+  background: none;
+  border: none;
+  color: var(--nav-text-color);
+  font-family: var(--nav-font-family);
+  font-size: 1.4em;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 10px;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Button Hover and Active State */
+.menu-items button:hover {
+  color: var(--nav-text-hover-color); /* Button hover color */
+}
+
+.menu-items button.active {
+  color: var(--nav-text-active-color); /* Button active color */
+}
+
+/* Call Now Section */
+.call-now {
+  padding: inherit;
 }
 
 .call-now-link-navbar {
@@ -47,55 +86,58 @@ nav a:hover,
   padding: 10px 20px;
   border-radius: 43px;
   transition: background-color 0.3s ease;
-  width: 260px;
-  height: 30px;
-  padding-right: 54px;
-  margin-right: 53px;
-  font-size: 22px;
+
 }
 
-nav a:hover {
-  color: var(--nav-text-hover-color);
+.call-now-link-navbar:hover {
+  background-color: var(--nav-text-hover-color);
 }
 
-.call-now {
-  margin-left: auto; /* Pushes the call button to the right */
-}
-
-/* Accessibility: Ensure focus styles are visible */
-nav a:focus {
-  outline: 2px solid var(--nav-text-active-color);
-}
-
-/* Responsive adjustments */
-/* @media (max-width: 768px) {
-  nav {
-    padding: 10px;
-  }
-.call-now-link-navbar{
-  display: none;
-
-} */
-
+/* Mobile Styles */
 @media (max-width: 768px) {
   nav {
-    display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px;
-    height: auto;
   }
 
-  nav a,
-  .call-now-link {
-    margin: 10px 0; /* Add margin between items */
-    font-size: 1.4em; /* Adjust font size for better readability */
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--nav-bg-color);
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
   }
 
-  .call-now-link-navbar {
-    display: none; /* Hide the call button on mobile */
+  .menu.open {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .home-icon {
+    margin-right: auto;
+  }
+
+  .menu-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;
+    margin-right: 10px;
+  }
+
+  .menu-items a {
+    margin: 0 10px;
+    font-size: 1.4em;
+    text-align: center;
+    display: block;
   }
 
   .call-now {
-    margin-left: 0; /* Reset margin for the call button */
+    display: none;
   }
 }

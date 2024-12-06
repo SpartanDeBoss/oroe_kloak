@@ -28,11 +28,13 @@
 }
 
 .home-title {
-  font-size: 55px;
-  font-weight: bold;
-  text-align: center;
-  margin: 117px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px; /* Adjust the height as needed */
 }
+
+
 
 .home-content {
   display: flex;
@@ -83,5 +85,10 @@
 
 .about-preview p{
   font-size: 1.3em;
+}
+
+.home-title {
+height: 100px;
+width: 75%;
 }
 }
