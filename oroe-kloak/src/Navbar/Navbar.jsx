@@ -1,37 +1,88 @@
-import React from 'react';
-import { animateScroll as scroll } from 'react-scroll';
-import { Link as RouterLink, useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { scroller } from 'react-scroll';
+import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
 import CallIcon from '@mui/icons-material/Call';
 import './Navbar.css';
 
+const CALL_NOW_TEXT = 'Call now +4521649856';
+
 export default function Navbar() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const [scrollToContact, setScrollToContact] = useState(false);
+
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
+
+  const handleScrollToContact = () => {
+    if (location.pathname === '/') {
+      // If already on the Home page, scroll to the contact section
+      scroller.scrollTo('contact', {
+        duration: 500,
+        delay: 100,
+        smooth: 'easeInOutQuad',
+        offset: -70,
+      });
+    } else {
+      // If not on the Home page, navigate there and scroll after a delay
+      navigate('/#contact');
+      setScrollToContact(true);
+    }
+  };
+
+  useEffect(() => {
+    if (scrollToContact ) {
+      scroller.scrollTo('contact', {
+        duration: 500,
+        delay: 100,
+        smooth: 'easeInOutQuad',
+        offset: -70,
+      });
+
+    setScrollToContact(false);
+    }
+  }, [location, scrollToContact]);
 
   return (
     <nav>
-      <RouterLink to="/">
-        <HomeIcon />
-      </RouterLink>
-      <RouterLink to="/about">Om os</RouterLink>
-      <RouterLink to="/services">Services</RouterLink>
-      <RouterLink
+      <NavLink
         to="/"
-        onClick={() => {
-          navigate('/');
-          setTimeout(() => {
-            scroll.scrollTo('contact', {
-              duration: 500,
-              delay: 100,
-              smooth: 'easeInOutQuad',
-              offset: -70,
-            });
-          }, 100);
-        }}
+        className={({ isActive }) => (isActive ? 'active' : '')}
       >
-        Kontakt
-      </RouterLink>
-      <RouterLink to="/workers">Medarbejdere</RouterLink>
+        <HomeIcon />
+      </NavLink>
+
+      <div className="menu-items">
+        <NavLink
+          to="/about"
+          onClick={() => handleNavigation('/about')}
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
+          Om os
+        </NavLink>
+        <NavLink
+          to="/services"
+          onClick={() => handleNavigation('/services')}
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
+          Services
+        </NavLink>
+        <button
+          onClick={handleScrollToContact}
+          className={`nav-button ${location.hash === '#contact' ? 'active' : ''}`} //
+        >
+          Kontakt
+        </button>
+        <NavLink
+          to="/workers"
+          onClick={() => handleNavigation('/workers')}
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
+          Medarbejdere
+        </NavLink>
+      </div>
 
       <div className="call-now">
         <a
@@ -39,7 +90,7 @@ export default function Navbar() {
           className="call-now-link-navbar"
           style={{ textDecoration: 'none', color: '#FFFFFF' }}
         >
-          <CallIcon /> Call now +4521649856
+          <CallIcon /> {CALL_NOW_TEXT}
         </a>
       </div>
     </nav>

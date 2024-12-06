@@ -69,7 +69,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="contact-container" id="contact">
+    <div className="contact-container">
       <h1 className="contact-title">Kontakt</h1>
       {statusMessage && <div className="status-message">{statusMessage}</div>}
       <div className="contact-content">

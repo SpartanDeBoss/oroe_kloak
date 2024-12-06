@@ -6,6 +6,10 @@ import Morten from '../images/Morten.jpg';
 import KP from '../images/KP.jpg';
 import Flemming from '../images/Flemming.jpg';
 import Mogens from '../images/unavailable.jpeg';
+import Martin from '../images/Martin.jpeg';
+import Kim from '../images/unavailable.jpeg';
+import Alexander from '../images/unavailable.jpeg';
+
 
 export default function ParentComponent() {
   const workers = [
@@ -14,9 +18,9 @@ export default function ParentComponent() {
     { name: 'KP', imageSrc: KP, role: 'Designer' },
     { name: 'Flemming', imageSrc: Flemming, role: 'Manager' },
     { name: 'Mogens', imageSrc: Mogens, role: 'Engineer' },
-    { name: 'Mogens', imageSrc: Mogens, role: 'Engineer' },
-    { name: 'Mogens', imageSrc: Mogens, role: 'Engineer' },
-    { name: 'Mogens', imageSrc: Mogens, role: 'Engineer' },
+    { name: 'Martin', imageSrc: Martin, role: 'Engineer' },
+    { name: 'Kim', imageSrc: Kim, role: 'Engineer' },
+    { name: 'Alexander', imageSrc: Alexander, role: 'Engineer' },
 
     // Add more workers as needed
   ];
