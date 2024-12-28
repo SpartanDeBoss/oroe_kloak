@@ -127,7 +127,7 @@ nav a.active,
     flex-direction: row;
     align-items: center;
     font-size: 10px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
   }
 
   .menu-items a {

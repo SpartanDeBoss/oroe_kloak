@@ -14,11 +14,11 @@
 
 .blog-title {
     text-align: center;
-    font-size: 1.7em;
+    font-size: 3rem;
     margin-bottom: 20px;
     color: #000;
     margin-top: 0px;
-    padding-top: 24px;
+    padding: 24px;
 }
 
 /* Individual blog post card styling */

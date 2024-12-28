@@ -3,6 +3,8 @@
   margin: 40px auto;
   padding: 20px;
   font-family: 'Arial', sans-serif;
+  margin-top: 120px;
+  margin-bottom: 150px;
 }
 
 .sewer-repair-container h1 {
@@ -29,13 +31,6 @@
   position: relative;
 }
 
-.sewer-repair-container ul li::before {
-  content: '•';
-  color: #007BFF;
-  font-size: 20px;
-  position: absolute;
-  left: 0;
-}
 .sewer-repair-container strong {
   color: #0077B6;
 }

@@ -1,11 +1,14 @@
 import React from 'react'
 import './GreaseTrap.css'
+import IMG from '../images/GreaseTrap.jpg'
 
 
 export default function GreaseTrap() {
   return (
     <div className="grease-trap-container">
       <h1>How to Maintain Your Grease Trap</h1>
+      <img src={IMG} alt="Grease Trap" />
+
       <p>
         Maintaining your grease trap is crucial to ensure the efficiency of your
         plumbing system and to avoid costly repairs. Here are some steps to
