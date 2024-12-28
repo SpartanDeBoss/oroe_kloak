@@ -4,13 +4,9 @@ import EmailIcon from '@mui/icons-material/Email';
 import CallIcon from '@mui/icons-material/Call';
 import PlaceIcon from '@mui/icons-material/Place';
 import DomainIcon from '@mui/icons-material/Domain';
-import { Link as RouterLink } from 'react-router-dom';
 
 
 export default function Footer() {
-
-// const navigate = useNavigate();
-
 
 
   return (
@@ -39,12 +35,6 @@ export default function Footer() {
           </p>
         </address>
 
-        <div className="footer-quick-links">
-          <RouterLink to="/">Hjem</RouterLink>
-          <RouterLink to="/about">Om</RouterLink>
-          <RouterLink to="/services">Tjenester</RouterLink>
-          <a href="#contact">Kontakt</a>
-        </div>
       </div>
       <div className="footer-copyright">
         © {new Date().getFullYear()} Aut. Kloakmester Niels Erland Nielsen. Alle

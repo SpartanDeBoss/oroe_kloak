@@ -7,11 +7,11 @@ export default function About() {
   return (
     <div className="about-container" id="about">
       <div className="about-info-container">
-        <div className="about-image">
+        <div className="about-img">
           <img src={niels} alt="Niels Erland Nielsen" />
         </div>
         <div className="about-text">
-          <h1 className="about-title">About Us</h1>
+          <h1 className="about-title">Om os</h1>
           <p className="about-paragraph">
             Jeg flyttede til Orø i 1990 og faldt for Ø-livet. Jeg har arbejdet
             inden for byggeri siden jeg var 18 år. Jeg er uddannet
@@ -36,7 +36,7 @@ export default function About() {
 
       <div className="commitment-container">
         <div className="commitment-text">
-          <h1 className="commitment-title">Our Commitment to the Community</h1>
+          <h1 className="commitment-title">Mit engagement i Fællesskabet</h1>
           <p className="commitment-paragraph">
             Ud over vores professionelle bestræbelser er vi stolte af bidrage
             til Orøs sikkerhed og trivsel. Jeg er en dedikeret medlem af
@@ -47,7 +47,7 @@ export default function About() {
             samfund og sikre et sikrere miljø for alle.
           </p>
         </div>
-        <div className="commitment-image">
+        <div className="commitment-img">
           <img src={niels} alt="Niels Erland Nielsen" />
         </div>
       </div>

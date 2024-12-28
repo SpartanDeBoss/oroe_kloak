@@ -2,6 +2,8 @@ import React from 'react';
 import Slider from 'react-slick';
 import IMG7 from '../images/IMG-7.jpg';
 import IMG8 from '../images/IMG-8.jpg';
+import IMG20 from '../images/IMG-20.jpg';
+import IMG21 from '../images/IMG-21.jpg';
 import './Service.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -41,6 +43,12 @@ export default function Service() {
           </div>
           <div className="service-image">
             <img src={IMG8} alt="IMG-8." />
+          </div>
+          <div>
+            <img src={IMG20} alt="IMG-20" />
+          </div>
+          <div>
+            <img src={IMG21} alt="IMG-21" />
           </div>
         </Slider>
       </div>

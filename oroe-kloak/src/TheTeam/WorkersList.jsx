@@ -2,13 +2,15 @@ import React from 'react';
 import Worker from './Workers';
 import './WorkersList.css';
 import nielsImage from '../images/niels.jpg';
-import Morten from '../images/Morten.jpg';
+import Morten from '../images/Morten.jpeg';
 import KP from '../images/KP.jpg';
 import Flemming from '../images/Flemming.jpg';
-import Mogens from '../images/unavailable.jpeg';
+import Mogens from '../images/Mogens.jpeg';
 import Martin from '../images/Martin.jpeg';
-import Kim from '../images/unavailable.jpeg';
+import Kim from '../images/Kim.jpeg';
 import Alexander from '../images/unavailable.jpeg';
+import Thomas from '../images/Thomas.jpg';
+
 
 
 export default function ParentComponent() {
@@ -21,6 +23,7 @@ export default function ParentComponent() {
     { name: 'Martin', imageSrc: Martin, role: 'Engineer' },
     { name: 'Kim', imageSrc: Kim, role: 'Engineer' },
     { name: 'Alexander', imageSrc: Alexander, role: 'Engineer' },
+    { name: 'Thomas', imageSrc: Thomas, role: 'Engineer' },
 
     // Add more workers as needed
   ];

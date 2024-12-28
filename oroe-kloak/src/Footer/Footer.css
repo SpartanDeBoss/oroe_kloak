@@ -38,23 +38,23 @@
   color: #0f0; /* Green for hover */
 }
 
-.footer-quick-links a {
+/* .footer-quick-links a {
   margin: 0 10px;
   color: #fff;
   text-decoration: none;
 }
 
 .footer-quick-links a.active {
-  color: #f00; /* Red for active links */
+  color: #f00;
 }
 
 .footer-quick-links a:hover {
-  color: #0f0; /* Green for hover */
+  color: #0f0;
 }
 
 .footer-info svg {
   font-size: 1.5em;
-}
+} */
 
 .footer-info {
   display: grid;
