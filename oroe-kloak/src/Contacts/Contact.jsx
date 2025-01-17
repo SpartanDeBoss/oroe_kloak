@@ -1,33 +1,32 @@
-import React, { useState, useEffect } from 'react';
-import './Contact.css';
-import emailjs from '@emailjs/browser';
+import React, { useState, useEffect } from "react";
+import "./Contact.css";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    telephone: '',
-    message: '',
-    getACall: '',
+    name: "",
+    email: "",
+    telephone: "",
+    message: "",
+    getACall: "",
   });
 
-  const[statusMessage, setStatusMessage] = useState('');
+  const [statusMessage, setStatusMessage] = useState("");
 
   const publicKey = process.env.REACT_APP_PUBLIC_KEY;
   const serviceID = process.env.REACT_APP_SERVICE_ID;
   const templateID = process.env.REACT_APP_TEMPLATE_ID;
 
   useEffect(() => {
-    console.log('Public Key:', publicKey);
-    console.log('Service ID:', serviceID);
-    console.log('Template ID:', templateID);
+    console.log("Public Key:", publicKey);
+    console.log("Service ID:", serviceID);
+    console.log("Template ID:", templateID);
     if (publicKey) {
       emailjs.init(publicKey);
     } else {
-      console.error('Public key is missing.');
+      console.error("Public key is missing.");
     }
   }, [publicKey, serviceID, templateID]);
-
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -41,29 +40,29 @@ export default function Contact() {
     e.preventDefault(); // Prevent the default form submission behavior
 
     if (!serviceID || !templateID || !publicKey) {
-      console.error('Missing serviceID, templateID, or publicKey.');
+      console.error("Missing serviceID, templateID, or publicKey.");
       return;
     }
 
     emailjs.send(serviceID, templateID, formData).then(
       (response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        setStatusMessage('Message sent successfully!');
+        console.log("SUCCESS!", response.status, response.text);
+        setStatusMessage("Message sent successfully!");
         setFormData({
-          name: '',
-          email: '',
-          telephone: '',
-          message: '',
-          getACall: '',
+          name: "",
+          email: "",
+          telephone: "",
+          message: "",
+          getACall: "",
         });
 
         setTimeout(() => {
-          setStatusMessage('');
+          setStatusMessage("");
         }, 7000);
       },
       (error) => {
-        console.log('FAILED...', error);
-        setStatusMessage('Failed to send message. Please try again later.');
+        console.log("FAILED...", error);
+        setStatusMessage("Failed to send message. Please try again later.");
       }
     );
   };
