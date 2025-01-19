@@ -3,39 +3,43 @@ import './RegularSewerMaintance.css';
 
 export default function RegularSewerMaintance() {
   return (
-    <div className='regular-sewer-maintenance-container'>
-      <h1>The Importance of Regular Sewer Maintenance</h1>
+    <div className="regular-sewer-maintenance-container">
+      <h1>
+        Hvordan du vedligeholder dit kloaksystem og hvorfor det er vigtigt
+      </h1>
       <p>
-        Regular sewer maintenance is crucial to prevent costly repairs and
-        ensure your system is functioning properly. Here are some steps to
-        maintain your sewer:
+        Regelmæssig vedligeholdelse af dit kloaksystem sikre, at det fungerer
+        optimalt og kan være afgørende for at forhindre dyre reparationer. Her
+        er nogle gode råd til, hvordan du holder dit kloaksystem i god stand:
       </p>
       <ul>
         <li>
-          <strong>Inspect Regularly:</strong> Inspect your sewer system
-          regularly for any signs of damage or leaks.
+          <strong>Tjek systemet jævnligt:</strong> Undersøg dit kloaksystem
+          regelmæssigt for tegn på skader eller utætheder.
         </li>
         <li>
-          <strong>Keep Drains Clear:</strong> Avoid flushing anything other than
-          toilet paper down the toilet and keep drains clear of debris.
+          <strong>Hold afløbene fri for snavs:</strong> Skyl udelukkende
+          toiletpapir ned i toilettet, og sørg for at holde afløbene fri for
+          affald.
         </li>
         <li>
-          <strong>Use Enzyme Cleaners:</strong> Use enzyme cleaners regularly to
-          keep your drains clean and prevent clogs.
+          <strong>Brug Enzymrens:</strong> Anvend enzymrens med jævne mellemrum
+          for at holde dine afløb rene og for at forebygge at dit system
+          tilstopper.
         </li>
         <li>
-          <strong>Professional Inspections:</strong> Have your sewer system
-          inspected by a professional plumber at least once a year.
+          <strong>Professionel Hjælp:</strong> Få dit kloaksystem tjekket af en
+          fagmand mindst én gang om året.
         </li>
         <li>
-          <strong>Address Issues Promptly:</strong> If you notice any issues
-          with your sewer system, address them promptly to prevent further
-          damage.
+          <strong>Reager hurtigt på problemer:</strong> Hvis du opdager
+          problemer med dit kloaksystem, skal du reagerer hurtigt og få dem
+          ordnet med det samme, for at undgå større skader.
         </li>
       </ul>
       <p>
-        By following these steps, you can avoid major issues and keep your sewer
-        system in good working condition.
+        Ved at følge disse råd kan du undgå store problemer og holde dit
+        kloaksystem i god stand.
       </p>
     </div>
   );

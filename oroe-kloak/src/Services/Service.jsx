@@ -20,7 +20,7 @@ export default function Service() {
   return (
     <div className="service-container" id="ourService">
       <div className="service-info-container">
-        <h1 className="service-title">Our Services</h1>
+        <h1 className="service-title">Vores ydelser</h1>
         <div>
           <ul className="service-list">
             <li>Kloak arbejde</li>

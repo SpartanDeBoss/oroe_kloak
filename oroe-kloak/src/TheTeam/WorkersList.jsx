@@ -15,15 +15,19 @@ import Thomas from '../images/Thomas.jpg';
 
 export default function ParentComponent() {
   const workers = [
-    { name: 'Niels', imageSrc: nielsImage, role: 'CEO & Founder' },
-    { name: 'Morten', imageSrc: Morten, role: 'Engineer' },
-    { name: 'KP', imageSrc: KP, role: 'Designer' },
-    { name: 'Flemming', imageSrc: Flemming, role: 'Manager' },
-    { name: 'Mogens', imageSrc: Mogens, role: 'Engineer' },
-    { name: 'Martin', imageSrc: Martin, role: 'Engineer' },
-    { name: 'Kim', imageSrc: Kim, role: 'Engineer' },
-    { name: 'Alexander', imageSrc: Alexander, role: 'Engineer' },
-    { name: 'Thomas', imageSrc: Thomas, role: 'Engineer' },
+    {
+      name: 'Niels',
+      imageSrc: nielsImage,
+      role: 'Kloakmester',
+    },
+    { name: 'Morten', imageSrc: Morten, role: 'Medarbejdere' },
+    { name: 'KP', imageSrc: KP, role: 'Medarbejdere' },
+    { name: 'Flemming', imageSrc: Flemming, role: 'Medarbejdere' },
+    { name: 'Mogens', imageSrc: Mogens, role: 'Medarbejdere' },
+    { name: 'Martin', imageSrc: Martin, role: 'Medarbejdere' },
+    { name: 'Kim', imageSrc: Kim, role: 'Medarbejdere' },
+    { name: 'Alexander', imageSrc: Alexander, role: 'Medarbejdere' },
+    { name: 'Thomas', imageSrc: Thomas, role: 'Medarbejdere' },
 
     // Add more workers as needed
   ];

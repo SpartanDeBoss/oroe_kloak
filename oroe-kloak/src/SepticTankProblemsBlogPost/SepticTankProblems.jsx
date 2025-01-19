@@ -5,26 +5,37 @@ import './SepticTankProblems.css'
 export default function SepticTankProblems() {
   return (
     <div className="septic-tank-problems-container">
-      <h1>Common Causes of Septic Tank Problems</h1>
-      <p>Understanding the common causes of septic tank problems can help you prevent issues and keep your system running smoothly. Some common causes include:
+      <h1>Almindelige årsager til problemer med din septiktank</h1>
+      <p>
+        Hvis du kender de almindelige årsager til problemer med en septiktank,
+        kan det hjælpe dig med at undgå problemer og sikre, at dit system
+        fungerer optimalt. Nogle af de mest almindelige årsager er:
       </p>
       <ul>
         <li>
-          <strong>Overloading:</strong> Overloading your septic tank with too much water or waste can cause it to back up and overflow.
+          <strong>Overbelastning:</strong> For meget vand eller affald i
+          septiktanken kan føre til, at den stopper til og begynder at flyde
+          over.
         </li>
         <li>
-          <strong>Tree Roots:</strong> Tree roots can grow into your septic tank and clog the pipes, causing backups and damage.
+          <strong>Trærødder:</strong> Trærødder kan vokse ind i septiktanken og
+          blokere rørene, hvilket kan føre til tilbagestrømning og skader på
+          tanken.
         </li>
         <li>
-          <strong>Improper Maintenance:</strong> Failing to maintain your septic tank can lead to clogs, leaks, and other issues.
+          <strong>Manglende Vedligeholdelse:</strong> Hvis septiktanken ikke
+          vedligeholdes korrekt, kan det føre til tilstopninger, lækager og
+          andre problemer.
         </li>
         <li>
-          <strong>Old Age:</strong> Older septic tanks are more prone to problems and may need to be replaced.
+          <strong>En Ældre Septiktank:</strong> Ældre septiktanke er mere
+          udsatte for problemer og kan have brug for udskiftning.
         </li>
         <li>
-          <strong>Chemicals:</strong> Flushing chemicals down the drain can kill the beneficial bacteria in your septic tank, leading to issues.
+          <strong>Kemi:</strong> At skylle kemikalier ned i afløbet kan dræbe de
+          gavnlige bakterier i septiktanken, hvilket kan skabe problemer.
         </li>
       </ul>
     </div>
-  )
+  );
 }

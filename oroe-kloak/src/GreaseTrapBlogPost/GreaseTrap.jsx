@@ -6,40 +6,40 @@ import IMG from '../images/GreaseTrap.jpg'
 export default function GreaseTrap() {
   return (
     <div className="grease-trap-container">
-      <h1>How to Maintain Your Grease Trap</h1>
+      <h1>Sådan vedligeholder du din fedtudskiller</h1>
       <img src={IMG} alt="Grease Trap" />
 
       <p>
-        Maintaining your grease trap is crucial to ensure the efficiency of your
-        plumbing system and to avoid costly repairs. Here are some steps to
-        properly maintain your grease trap:
+        Det er vigtigt at vedligeholde din fedtudskiller for at sikre, at dit
+        kloaksystem fungerer optimalt, forebygge skader og for at undgå dyre
+        reparationer. Derfor kan du følge disse simple råd:
       </p>
       <ul>
         <li>
-          <strong>Regular Cleaning:</strong> Clean your grease trap regularly to
-          prevent buildup and blockages.
+          <strong>Regelmæssig rengøring:</strong> Sørg for at rengøre din
+          fedtudskiller jævnligt for at undgå ophobninger af fedt, som kan
+          blokere dine kloakrør.
         </li>
         <li>
-          <strong>Scrape Plates:</strong> Scrape plates and remove any solid
-          waste to prevent clogs.
+          <strong>Skrab tallerkener af:</strong> Fjern madrester og andet fast
+          affald fra tallerkener, inden de skylles, for at forhindre
+          tilstopninger i dine kloakrør.
         </li>
         <li>
-          <strong>Use Bacteria Additives:</strong> Use bacteria additives to
-          break down grease and prevent odors.
+          <strong>Brug bakterietilsætninger:</strong> Tilføj bakterier, der
+          nedbryder fedt og mindsker lugtgener.
         </li>
         <li>
-          <strong>Inspect Regularly:</strong> Inspect your grease trap regularly
-          for any signs of damage or leaks.
+          <strong>Tjek regelmæssigt:</strong> Tjek din fedtudskiller jævnligt
+          for skader eller utætheder.
         </li>
         <li>
-          <strong>Professional Maintenance:</strong> Have your grease trap
-          inspected and maintained by a professional plumber at least once a
-          year.
+          <strong>Professionel service:</strong> Få en professionel til at
+          inspicere og vedligeholde din fedtudskiller mindst én gang om året.
         </li>
       </ul>
       <p>
-        By following these steps, you can keep your grease trap in good working
-        condition and prevent costly repairs in the future.
+        Ved at følge disse råd kan du sikre, at din fedtudskiller fungerer optimalt og undgå unødvendige udgifter til reparationer.
       </p>
     </div>
   );

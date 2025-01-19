@@ -58,7 +58,7 @@ export default function ServicePreview() {
 
   return (
     <div className="service-preview-container">
-      <h1 className="service-preview-title">Our Service</h1>
+      <h1 className="service-preview-title">Vores ydelser</h1>
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}>
