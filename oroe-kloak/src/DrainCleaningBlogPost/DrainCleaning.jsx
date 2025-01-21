@@ -5,38 +5,44 @@ import "./DrainCleaning.css";
 export default function DrainCleaning() {
   return (
     <div className="drain-cleaning-container">
-      <h1>The Benefits of Professional Drain Cleaning</h1>
+      <h1>Rensning af afløb</h1>
       <p>
-        Professional drain cleaning is essential to keep your plumbing system
-        running smoothly and prevent costly repairs. Here are some benefits of
-        professional drain cleaning:
+        En professionel rensning af dine afløb er en god måde at holde dit
+        kloaksystem i optimal stand og forebygge unødvendige og dyre
+        reparationer. Her er nogle fordele ved at få dine afløb renset af en
+        professionel:
       </p>
       <ul>
         <li>
-          <strong>Prevent Clogs:</strong> Professional drain cleaning removes
-          buildup and debris from your pipes, preventing clogs and backups.
+          <strong>Forhindrer Tilstopninger:</strong> Professionel rensning
+          fjerner ophobninger af snavs fra dine rør, og forhindrer derfor
+          tilstopninger og tilbagestrømning.
         </li>
         <li>
-          <strong>Improve Drainage:</strong> Clean drains allow water to flow
-          freely, improving drainage and preventing water damage.
+          <strong>Forbedrer Dræning:</strong> Rene afløb gør, at vandet kan løbe
+          frit, hvilket forbedrer dræningen og forebygger derfor også
+          vandskader.
         </li>
         <li>
-          <strong>Eliminate Odors:</strong> Cleaning your drains removes
-          foul-smelling buildup, eliminating odors in your home.
+          <strong>Fjerner Lugt:</strong> En rensning af afløbene fjerner ophobet
+          snavs, som kan forårsage ubehagelige lugte i dit hjem, og hjælper
+          dermed med at fjerne lugten.
         </li>
         <li>
-          <strong>Extend Lifespan:</strong> Regular drain cleaning can extend
-          the lifespan of your plumbing system and prevent costly repairs.
+          <strong>Forlænger Levetiden:</strong> Regelmæssig rensning af afløbene
+          kan forlænge kloaksystemets holdbarhed og reducere behovet for dyre
+          reparationer.
         </li>
         <li>
-          <strong>Professional Service:</strong> Hiring a professional plumber
-          ensures that your drains are cleaned thoroughly and effectively.
+          <strong>Professionel Service:</strong> Ved at hyre en professionel
+          sikrer du, at dine afløb bliver renset grundigt og effektivt.
         </li>
       </ul>
       <p>
-        By investing in professional drain cleaning, you can keep your plumbing
-        system in top condition and avoid costly repairs in the future.
+        Ved at investere i professionel afløbsrensning kan du holde dit
+        kloaksystem i topform, forebygge skader og derfor undgå dyre
+        reparationer i fremtiden.
       </p>
     </div>
-  )
+  );
 }

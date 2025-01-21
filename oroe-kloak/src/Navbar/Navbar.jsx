@@ -5,7 +5,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import CallIcon from '@mui/icons-material/Call';
 import './Navbar.css';
 
-const CALL_NOW_TEXT = 'Call now +4521649856';
+const CALL_NOW_TEXT = 'Ring nu +4521649856';
 
 export default function Navbar() {
   const navigate = useNavigate();

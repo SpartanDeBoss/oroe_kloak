@@ -4,39 +4,43 @@ import IMG from '../images/IMG-7.jpg';
 export default function SewerRepair() {
   return (
     <div className="sewer-repair-container">
-      <h1>Signs Your Sewer Line Needs Repair</h1>
+      <h1>Tegn på at et kloakrør har brug for reparation </h1>
       <img src={IMG} alt="Sewer Repair" />
       <p>
-        Knowing the signs that your sewer line needs repair can help you avoid
-        costly damage and repairs. Look out for the following indicators:
+        Hvis du kan genkende tegnene på, at dine kloakrør trænger til
+        reparation, kan du undgå at forværre skaderne og undgå dyre
+        reparationer. Derfor bør du være opmærksom på følgende:
       </p>
       <ul>
         <li>
-          <strong>Slow Drains:</strong> If your drains are slow to empty, it
-          could be a sign of a clogged or damaged sewer line.
+          <strong>Afløbene Tømmes Langsomt:</strong> Hvis dine afløb tømmes
+          langsomt, kan det være et tegn på en tilstoppet eller beskadiget
+          kloakrør.
         </li>
         <li>
-          <strong>Odors:</strong> Foul odors coming from your drains or yard
-          could indicate a sewer line problem.
+          <strong>Lugtgener:</strong> Ubehagelig lugt fra dine afløb eller fra
+          din have kan indikere at der er problemer med et kloakrør.
         </li>
         <li>
-          <strong>Backups:</strong> Sewage backups in your drains or toilets are
-          a clear sign that your sewer line needs repair.
+          <strong>Tilbagestrømning:</strong> Hvis der stiger spildevand op i
+          dine afløb eller toiletter, er det et klart tegn på, at et kloakrør
+          har brug for reparation.
         </li>
         <li>
-          <strong>Pooling Water:</strong> Pools of water in your yard or around
-          your home could indicate a broken sewer line.
+          <strong>Vandansamlinger:</strong> Pøle af vand i haven eller omkring
+          huset kan indikere et brud på et kloakrør.
         </li>
         <li>
-          <strong>Foundation Cracks:</strong> Cracks in your foundation could be
-          caused by a damaged sewer line leaking water.
+          <strong>Revner i fundamentet:</strong> Hvis du finder revner i husets
+          fundament, kan de være forårsaget af et beskadiget kloakrør, der
+          lækker vand.
         </li>
       </ul>
       <p>
-        If you notice any of these signs, contact a professional plumber to
-        inspect your sewer line and recommend the necessary repairs. Ignoring
-        sewer line problems can lead to more extensive damage and costly
-        repairs.
+        Hvis du opdager nogle af disse tegn, bør du kontakte en professionel
+        blikkenslager for at få inspiceret kloakledningen og få anbefalet de
+        nødvendige reparationer. At ignorere problemer med kloakledningen kan
+        føre til større skader og dyre reparationer.
       </p>
     </div>
   );

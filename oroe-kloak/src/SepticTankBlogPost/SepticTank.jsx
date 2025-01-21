@@ -5,29 +5,44 @@ import './SepticTank.css';
 export default function SepticTank() {
   return (
     <div className="septic-tank-container">
-      <h1>How to Choose the Right Septic Tank</h1>
-      <p>Choosing the right septic tank is essential to ensure your system operates efficiently and effectively. Consider the following factors:
+      <h1>Sådan vælger du den rette septiktank</h1>
+      <p>
+        Valget af den rette septiktank er vigtigt for at sikre, at dit system
+        fungerer effektivt og pålideligt. Derfor bør du overveje flere vigtige
+        aspekter, inden du investerer i en tank:
       </p>
       <ul>
         <li>
-          <strong>Size:</strong> The size of the septic tank should be appropriate for the size of your household. A larger tank will require less frequent pumping and maintenance.
+          <strong>Størrelse:</strong> Septiktankens størrelse skal passe til
+          husstandens størrelse. En større tank kræver færre tømninger og mindre
+          vedligeholdelse.
         </li>
         <li>
-          <strong>Material:</strong> Septic tanks are typically made of concrete, fiberglass, or plastic. Each material has its advantages and disadvantages, so choose the one that best suits your needs.
+          <strong>Materiale:</strong> Septiktanke er typisk lavet af beton,
+          glasfiber eller plast. Hvert materiale har sine fordele og ulemper,
+          derfor bør du undersøge, hvilken type tank der bedst kan opfylde dine
+          behov.
         </li>
         <li>
-          <strong>Cost:</strong> The cost of the septic tank will depend on its size, material, and other factors. Consider your budget when choosing a tank.
+          <strong>Pris:</strong> Prisen på septiktanken afhænger bl.a. af dens
+          størrelse og materiale. Tænk på dit budget, når du vælger tank.
         </li>
         <li>
-          <strong>Installation:</strong> Proper installation is crucial to the performance of the septic tank. Make sure to hire a professional to install the tank correctly.
+          <strong>Installation:</strong> Korrekt installation er afgørende for,
+          at septiktanken fungerer optimalt. Derfor bør en professionel altid
+          installere tanken.
         </li>
         <li>
-          <strong>Maintenance:</strong> Regular maintenance is essential to keep your septic tank in good working condition. Be sure to follow the manufacturer's recommendations for maintenance.
+          <strong>Vedligeholdelse:</strong> Regelmæssig vedligeholdelse er
+          vigtig for at holde septiktanken i god stand. Her bør du følge
+          producentens anbefalinger for vedligeholdelse.
         </li>
       </ul>
       <p>
-        By considering these factors, you can choose the right septic tank for your home and ensure that your system operates smoothly for years to come.
+        Ved at tage disse faktorer i betragtning kan du vælge den rette
+        septiktank til dit hjem og sikre, at dit system fungerer problemfrit i
+        mange år fremover.
       </p>
     </div>
-  )
+  );
 }

@@ -27,9 +27,14 @@
 
 .worker-name {
   font-family: philosopher, sans-serif;
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 10px 0;
   color: #333;
+}
+
+.worker-role {
+  font-size: 1.5em;
+  color: #777;
 }
 
 .worker-image {
