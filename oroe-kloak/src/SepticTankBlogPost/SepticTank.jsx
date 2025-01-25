@@ -1,10 +1,12 @@
 import React from 'react';
 import './SepticTank.css';
+import BackButton from '../BackButton/BackButton';
 
 
 export default function SepticTank() {
   return (
     <div className="septic-tank-container">
+      <BackButton />
       <h1>Sådan vælger du den rette septiktank</h1>
       <p>
         Valget af den rette septiktank er vigtigt for at sikre, at dit system

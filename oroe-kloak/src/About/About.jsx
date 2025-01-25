@@ -39,21 +39,19 @@ export default function About() {
       <div className="commitment-container">
         <div className="commitment-text">
           <h1 className="commitment-title">Mit engagement i Fællesskabet</h1>
+          {/* <div className="commitment-img">
+            <img src={niels} alt="Niels Erland Nielsen" />
+          </div> */}
           <p className="commitment-paragraph">
-            Jeg flyttede til Orø i 1996 og blev hurtigt forelsket i det unikke
-            Ø-liv. Jeg har arbejdet i byggebranchen siden jeg var 18 år gammel
-            og har både uddannelse som bygningsinstruktør, kloakmester og
-            brandmand. I 2002 sprang jeg ud som selvstændig og startede min
-            virksomhed, hvor jeg i starten primært arbejdede på Orø. Siden da
-            har vi vokset os større, fået flere dygtige medarbejdere og udfører
-            nu opgaver over hele Sjælland. Jeg er gift med Zuzanne, og sammen
-            bor vi på Orø, hvor jeg er meget engageret i lokalsamfundet. Udover
-            arbejdet er jeg også frivillig brandmand og bidrager aktivt til det
-            fællesskab, jeg holder så meget af.
+            Udover vores professionelle arbejde er jeg stolt af at kunne bidrage
+            til Orøs sikkerhed og trivsel. Jeg er en dedikeret del af
+            brandmandskorpset her på Orø, og denne rolle er et tydeligt udtryk
+            for vores engagement i samfundet. Det afspejler de kerneværdier, vi
+            bringer med os i vores virksomhed hver dag – mod, integritet og
+            samarbejde. Gennem vores frivillige indsats på brandstationen
+            stræber vi efter at støtte og beskytte lokalsamfundet og skabe et
+            tryggere miljø for alle
           </p>
-        </div>
-        <div className="commitment-img">
-          <img src={niels} alt="Niels Erland Nielsen" />
         </div>
       </div>
     </div>

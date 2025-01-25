@@ -1,10 +1,12 @@
 import React from 'react'
 import './SepticTankProblems.css'
+import BackButton from '../BackButton/BackButton';
 
 
 export default function SepticTankProblems() {
   return (
     <div className="septic-tank-problems-container">
+      <BackButton />
       <h1>Almindelige årsager til problemer med din septiktank</h1>
       <p>
         Hvis du kender de almindelige årsager til problemer med en septiktank,

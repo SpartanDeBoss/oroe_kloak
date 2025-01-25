@@ -10,7 +10,7 @@ export default function AboutPreview() {
           Alt i kloak og dræn! På Orø finder du aut. kloakmester Niels Erland
           Nielsen og alle hans medarbejdere, som arbejder professionelt inden
           for alt kloak arbejde; herunder tilslutning til offentlig kloak,
-          vedligeholdelse og totalløsninger indenfor bygeri.
+          vedligeholdelse og totalløsninger indenfor byggeri.
         </p>
         <p className="home-about-paragraph">Yderligere udfører vi:</p>
         <ul className="home-about-services">

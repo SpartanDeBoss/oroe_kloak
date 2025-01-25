@@ -1,10 +1,13 @@
 import React from "react";
 import "./DrainCleaning.css";
+import BackButton from "../BackButton/BackButton";
 
 
 export default function DrainCleaning() {
+
   return (
     <div className="drain-cleaning-container">
+      <BackButton />
       <h1>Rensning af afløb</h1>
       <p>
         En professionel rensning af dine afløb er en god måde at holde dit

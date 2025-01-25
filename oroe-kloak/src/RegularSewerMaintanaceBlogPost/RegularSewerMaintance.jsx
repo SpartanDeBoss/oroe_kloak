@@ -1,9 +1,11 @@
 import React from 'react';
 import './RegularSewerMaintance.css';
+import BackButton from '../BackButton/BackButton';
 
 export default function RegularSewerMaintance() {
   return (
     <div className="regular-sewer-maintenance-container">
+      <BackButton />
       <h1>
         Hvordan du vedligeholder dit kloaksystem og hvorfor det er vigtigt
       </h1>
