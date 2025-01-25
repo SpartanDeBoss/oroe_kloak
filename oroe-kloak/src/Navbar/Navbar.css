@@ -127,17 +127,34 @@ nav a.active,
     flex-direction: row;
     align-items: center;
     font-size: 10px;
-    /* margin-right: 10px; */
   }
 
   .menu-items a {
     margin: 0 10px;
-    font-size: 1.4em;
-    text-align: center;
-    display: block;
+    font-size: 1.2em;
+  }
+
+  .nav-button {
+    margin:  5px 0;
+    font-size: 1.2em;
   }
 
   .call-now {
     display: none;
+  }
+}
+
+/* Media Queries for larger screens */
+@media  (min-width: 768px) {
+  .call-now {
+    display: block;
+  }
+
+  .menu-items {
+    font-size: 14px;
+  }
+
+  .menu-items a {
+    margin: 0 15px;
   }
 }

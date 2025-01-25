@@ -1,9 +1,11 @@
 import React from 'react';
 import './SewerRepair.css';
 import IMG from '../images/IMG-7.jpg';
+import BackButton from '../BackButton/BackButton';
 export default function SewerRepair() {
   return (
     <div className="sewer-repair-container">
+      <BackButton />
       <h1>Tegn på at et kloakrør har brug for reparation </h1>
       <img src={IMG} alt="Sewer Repair" />
       <p>

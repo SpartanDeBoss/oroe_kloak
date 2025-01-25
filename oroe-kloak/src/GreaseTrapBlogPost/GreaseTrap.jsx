@@ -1,11 +1,13 @@
 import React from 'react'
 import './GreaseTrap.css'
 import IMG from '../images/GreaseTrap.jpg'
+import BackButton from '../BackButton/BackButton';
 
 
 export default function GreaseTrap() {
   return (
     <div className="grease-trap-container">
+      <BackButton />
       <h1>Sådan vedligeholder du din fedtudskiller</h1>
       <img src={IMG} alt="Grease Trap" />
 

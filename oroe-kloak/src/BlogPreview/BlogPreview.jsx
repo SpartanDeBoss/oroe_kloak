@@ -7,42 +7,42 @@ const blogPosts = [
     id: 1,
     title: 'Hvordan du vedligeholder dit kloaksystem og hvorfor det er vigtigt',
     excerpt:
-      'Regular sewer maintenance is crucial to prevent costly repairs and ensure your system is functioning properly...',
+      'Regelmæssig kloakvedligeholdelse er afgørende for at forhindre dyre reparationer og sikre, at dit system fungerer korrekt...',
     link: '/blog/sewer-maintenance',
   },
   {
     id: 2,
     title: 'Sådan vælger du den rette septiktank',
     excerpt:
-      'Choosing the right septic tank is essential to ensure your system operates efficiently and effectively...',
+      'Det er vigtigt at vælge den rigtige septiktank for at sikre, at dit system fungerer effektivt...',
     link: '/blog/septic-tank',
   },
   {
     id: 3,
     title: 'Tegn på at et kloakrør har brug for reparation',
     excerpt:
-      'Knowing the signs that your sewer line needs repair can help you avoid costly damage and repairs...',
+      'At kende tegnene på, at din kloakledning skal repareres, kan hjælpe dig med at undgå dyre skader og reparationer...',
     link: '/blog/sewer-line-repair',
   },
   {
     id: 4,
     title: 'Fordelene ved professionel afløbsrensning',
     excerpt:
-      'Professional drain cleaning offers a range of benefits, including improved efficiency and reduced risk of clogs...',
+      'Professionel afløbsrensning giver en række fordele, herunder forbedret effektivitet og reduceret risiko for tilstopning...',
     link: '/blog/drain-cleaning',
   },
   {
     id: 5,
     title: 'Almindelige årsager til problemer med din septiktank',
     excerpt:
-      'Understanding the common causes of septic tank problems can help you prevent issues and keep your system running smoothly...',
+      'At forstå de almindelige årsager til septiktankproblemer kan hjælpe dig med at forhindre problemer og holde dit system kørende...',
     link: '/blog/septic-tank-problems',
   },
   {
     id: 6,
     title: 'Sådan vedligeholder du din fedtudskiller',
     excerpt:
-      'Proper maintenance of your grease trap is essential to prevent clogs, backups, and other issues...',
+      'Korrekt vedligeholdelse af fedtudskillere er afgørende for at forhindre tilstopninger, backups og andre problemer...',
     link: '/blog/grease-trap-maintenance',
   },
 ];

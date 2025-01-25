@@ -51,7 +51,7 @@ export default function Navbar() {
         to="/"
         className={({ isActive }) => (isActive ? 'active' : '')}
       >
-        <HomeIcon />
+        <HomeIcon fontSize='large'/>
       </NavLink>
 
       <div className="menu-items">
