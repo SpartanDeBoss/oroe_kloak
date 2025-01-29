@@ -1,0 +1,51 @@
+/* Container for the entire about section */
+.home-about-container {
+    color: #333;
+    padding: 40px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+}
+
+
+.home-about-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+.home-about-paragraph {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.home-about-services {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+.home-about-services li {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Responsive design adjustments */
+@media (min-width: 768px) {
+  .home-about-container {
+    padding: 60px 40px;
+  }
+
+  .home-about-title {
+    font-size: 3em;
+  }
+
+  .home-about-paragraph, .home-about-services li {
+    font-size: 1.3em;
+  }
+}
