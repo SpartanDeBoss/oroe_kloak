@@ -1,0 +1,89 @@
+/* Root Variables */
+:root {
+  --footer-bg-color: #333;
+  --footer-text-color: #fff;
+  --footer-hover-color: #0f0;
+  --footer-active-color: #f00;
+  --footer-link-color: #80bff2;
+  --footer-font-family: philosopher, sans-serif;
+  --footer-title-font-size: 2em;
+  --footer-info-font-size: 1.2em;
+  --footer-powered-by-font-size: 1.1em;
+  --footer-copyright-font-size: 0.9em;
+}
+
+/* Footer Container */
+.footer-container {
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  padding: 30px 20px;
+  text-align: center;
+  font-family: var(--footer-font-family);
+}
+
+.footer-title {
+  font-size: var(--footer-title-font-size);
+  margin-bottom: 15px;
+}
+
+/* 🔥 Updated Footer Content - NOW INLINE */
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Ensures items wrap if the screen is too small */
+  padding: 10px 0;
+}
+
+/* Each footer item with an icon */
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--footer-info-font-size);
+}
+
+/* Make links more readable */
+.footer-item a {
+  color: var(--footer-text-color);
+  text-decoration: none;
+}
+
+.footer-item a:hover {
+  color: var(--footer-hover-color);
+}
+
+/* Powered by & Copyright */
+.footer-powered-by {
+  font-size: var(--footer-powered-by-font-size);
+  margin-top: 15px;
+}
+
+.footer-powered-by a {
+  color: var(--footer-link-color);
+  text-decoration: none;
+}
+
+.footer-powered-by a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  margin-top: 10px;
+  font-size: var(--footer-copyright-font-size);
+}
+
+/* 🔥 Responsive Fixes */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-item {
+    justify-content: center;
+  }
+}
