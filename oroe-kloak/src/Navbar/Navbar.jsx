@@ -3,6 +3,8 @@ import { scroller } from 'react-scroll';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
 import CallIcon from '@mui/icons-material/Call';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import './Navbar.css';
 
 const CALL_NOW_TEXT = 'Ring nu +4521649856';
@@ -11,9 +13,21 @@ export default function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
   const [scrollToContact, setScrollToContact] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 341);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 341);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
 
   const handleNavigation = (path) => {
     navigate(path);
+    setMenuOpen(false); // Close the menu after navigating
   };
 
   const handleScrollToContact = () => {
@@ -30,6 +44,7 @@ export default function Navbar() {
       navigate('/#contact');
       setScrollToContact(true);
     }
+    setMenuOpen(false);
   };
 
   useEffect(() => {
@@ -54,7 +69,7 @@ export default function Navbar() {
         <HomeIcon fontSize='large'/>
       </NavLink>
 
-      <div className="menu-items">
+      <div className={`menu-items ${isSmallScreen ? (menuOpen ? "open" : "closed") : ""}`}>
         <NavLink
           to="/about"
           onClick={() => handleNavigation('/about')}
@@ -93,6 +108,13 @@ export default function Navbar() {
           <CallIcon /> {CALL_NOW_TEXT}
         </a>
       </div>
+
+      {/* Burger menu  Only appears if screen width is 341 or smaller */}
+      {isSmallScreen &&
+      <div className="burger-menu" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <CloseIcon fontSize='large'/> : <MenuIcon fontSize='large'/>}
+      </div>
+      }
     </nav>
   );
 }

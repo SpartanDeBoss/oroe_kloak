@@ -7,7 +7,7 @@ export default function BackButton() {
 
   return (
     <button className="back-button" onClick={() => navigate(-1)}>
-      Back
+      Tilbage
     </button>
   );
 }

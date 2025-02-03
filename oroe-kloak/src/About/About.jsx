@@ -4,8 +4,10 @@ import niels from '../images/niels.jpg';
 import CallIcon from '@mui/icons-material/Call';
 
 export default function About() {
+  const phoneNumber = '+4521649856';
+
   return (
-    <div className="about-container" id="about">
+    <div className="about-container">
       <div className="about-info-container">
         <div className="about-img">
           <img src={niels} alt="Niels Erland Nielsen" />
@@ -24,24 +26,20 @@ export default function About() {
             arbejdet er jeg også frivillig brandmand og bidrager aktivt til det
             fællesskab, jeg holder så meget af.
           </p>
-          <div>
+          <div className="call-now-about">
             <a
               href="tel:+4521649856"
               className="call-now-link"
-              style={{ textDecoration: 'none', color: '#FFFFFF' }}
             >
-              <CallIcon /> Ring nu +4521649856
+              <CallIcon /> Ring nu {phoneNumber}
             </a>
           </div>
         </div>
       </div>
 
-      <div className="commitment-container">
+      <div className="commitment-info-container">
         <div className="commitment-text">
           <h1 className="commitment-title">Mit engagement i Fællesskabet</h1>
-          {/* <div className="commitment-img">
-            <img src={niels} alt="Niels Erland Nielsen" />
-          </div> */}
           <p className="commitment-paragraph">
             Udover vores professionelle arbejde er jeg stolt af at kunne bidrage
             til Orøs sikkerhed og trivsel. Jeg er en dedikeret del af

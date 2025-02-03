@@ -7,7 +7,9 @@
   --nav-font-family: philosopher, sans-serif;
   --nav-font-size: 1.6em;
   --nav-height: 60px;
+  --nav-mobile-font-size: 1em;
 }
+
 
 /* Navigation Bar Styling */
 nav {
@@ -55,12 +57,16 @@ nav a.active,
 .menu-items button {
   background: none;
   border: none;
-  color: var(--nav-text-color);
-  font-family: var(--nav-font-family);
-  font-size: 1.4em;
   cursor: pointer;
   text-align: center;
-  margin: 0 10px;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-button {
+  color: var(--nav-text-color);
+  font-family: var(--nav-font-family);
+  font-size: var(--nav-font-size);
+  margin: 0 15px;
   transition: color 0.3s ease; /* Smooth color transition */
 }
 
@@ -75,6 +81,7 @@ nav a.active,
 
 /* Call Now Section */
 .call-now {
+  display: none;
   padding: inherit;
 }
 
@@ -93,8 +100,14 @@ nav a.active,
   background-color: var(--nav-text-hover-color);
 }
 
+/* Burger Menu */
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
 /* Mobile Styles */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   nav {
     justify-content: space-between;
     padding: 10px;
@@ -125,8 +138,7 @@ nav a.active,
   .menu-items{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    font-size: 10px;
+    font-size: var(--nav-mobile-font-size);
   }
 
   .menu-items a {
@@ -135,7 +147,6 @@ nav a.active,
   }
 
   .nav-button {
-    margin:  5px 0;
     font-size: 1.2em;
   }
 
@@ -145,16 +156,47 @@ nav a.active,
 }
 
 /* Media Queries for larger screens */
-@media  (min-width: 768px) {
+@media (min-width: 1024px) {
   .call-now {
+    display: block;
+  }
+}
+
+/* Additional Media Queries for smaller screens */
+@media ( max-width: 768px) {
+  nav a,
+  .menu-items button {
+    font-size: 1.2em;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a,
+  .menu-items button {
+    font-size: 1em;
+    margin: 0 5px;
+  }
+}
+
+
+/* Show the burger menu only when the screen width is 341px or smaller */
+@media (max-width: 341px) {
+  .burger-menu {
     display: block;
   }
 
   .menu-items {
-    font-size: 14px;
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    background-color: var(--nav-bg-color);
+    width: 100%;
+    top: var(--nav-height);
+    left: 0;
+    gap: 4px;
   }
 
-  .menu-items a {
-    margin: 0 15px;
+  .menu-items.open {
+    display: flex; /* Show menu when burger is clicked */
   }
 }

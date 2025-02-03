@@ -1,10 +1,12 @@
 .drain-cleaning-container {
   max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  font-family: 'Arial', sans-serif;
-  margin-top: 120px;
-  margin-bottom: 150px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 120px;
+    margin-bottom: 150px;
 }
 
 .drain-cleaning-container h1 {

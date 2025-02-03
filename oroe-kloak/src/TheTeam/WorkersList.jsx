@@ -10,6 +10,7 @@ import Martin from '../images/Martin.jpeg';
 import Kim from '../images/Kim.jpeg';
 import Alexander from '../images/unavailable.jpeg';
 import Thomas from '../images/Thomas.jpg';
+import Nygaard from '../images/unavailable.jpeg';
 
 
 
@@ -28,6 +29,7 @@ export default function ParentComponent() {
     { name: 'Kim', imageSrc: Kim, role: 'Medarbejdere' },
     { name: 'Alexander', imageSrc: Alexander, role: 'Medarbejdere' },
     { name: 'Thomas', imageSrc: Thomas, role: 'Medarbejdere' },
+    { name: 'Nygaard', imageSrc: Nygaard, role: 'Medarbejdere' },
 
     // Add more workers as needed
   ];

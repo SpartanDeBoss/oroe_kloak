@@ -1,11 +1,22 @@
+/* Define the custom font */
+@font-face {
+  font-family: 'Philosopher';
+  src: url('../../public/Philosopher/Philosopher-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .about-container {
-  margin: 0;
-  padding: var(--space-xs) 0; /* Consistent spacing at the top and bottom */
-  background-image: url('../images/IMG-16.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: philosopher, sans-serif;
-  background-size: cover; /* Ensure the image covers the container */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  background-position: center top;
+  background-color: rgb(223, 238, 245);
+  /* background-repeat: no-repeat; */
+  /* background-image: url('../images/KloakLogo.png'); */
+  background-size: cover;
 }
 
 /* Move the background image down */
@@ -22,16 +33,9 @@
   margin-top: 35px;
 }
 
-.about-info-container,
-.commitment-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: philosopher, sans-serif;
-  font-size: 2.1em;
+.about-text, .commitment-text {
+  border-radius: 45px;
+  padding-bottom: 4px;
 }
 
 .about-title,
@@ -39,24 +43,17 @@
   color: #333;
   text-align: center;
   margin-bottom: 20px;
-  margin-top: 70px;
+  margin-top: 10px;
+  font-size: 2.5em;
+  padding-top: 30px;
 }
 
-.about-image,
-.commitment-image {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
 
-.about-image img,
-.commitment-image img {
-  width: 100%;
-  height: auto;
-  margin-top: 30px;
+.about-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
 }
 
 .about-paragraph,
@@ -65,7 +62,7 @@
   line-height: 1.6;
   text-align: justify;
   font-size: 26px;
-  margin: 113px;
+  margin: 70px;
 }
 
 @media (min-width: 768px) {
@@ -91,6 +88,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #ffffff ;
   background-color: #39ac6b;
   padding: 10px 20px;
   border-radius: 43px;
@@ -99,12 +97,12 @@
   height: 55px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 64px;
-  font-size: 20px;
+  margin-bottom: 40px;
+  font-size: 24px;
 }
 
 .call-now-link:hover {
-  background-color: #36d3a9; /* Darker blue on hover */
+  background-color: rgb(233, 51, 35); /* Darker blue on hover */
 }
 
 .call-now-link svg {

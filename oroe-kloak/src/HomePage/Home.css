@@ -4,6 +4,7 @@
   --text-color-secondary: #555;
   --background-color: #f9f9f9;
   --shadow-color: rgba(0, 0, 0, 0.1);
+  --background-image-url: url('../images/IMG-16.jpg');
 
   /* Spacing */
   --space-xs: 20px;
@@ -22,7 +23,7 @@
 .home-container {
   margin: 0;
   padding: var(--space-xs) 0; /* Consistent spacing at the top and bottom */
-  background-image: url('../images/IMG-16.jpg');
+  background-image: var(--background-image-url);
   font-family: philosopher, sans-serif;
 
 }
@@ -64,7 +65,7 @@
 .about-preview p,
 .testimonials p,
 .blog-preview p{
-  font-size: 30px;
+  font-size: 1.5em;
   line-height: 1.6;
   font-family: philosopher, sans-serif;
 }
@@ -76,19 +77,21 @@
 
 @media (max-width: 768px) {
  .home-title {
-    font-size: 55px;
     font-weight: bold;
     text-align: center;
-    margin: 61px;
-    display: flex;
+    margin-top: 75px;
 }
 
-.about-preview p{
-  font-size: 1.3em;
+/* .about-preview p{
+  font-size: 1.1em;
+} */
+
+.about-preview p,
+.testimonials p,
+.blog-preview p{
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-family: philosopher, sans-serif;
 }
 
-.home-title {
-height: 100px;
-width: 75%;
-}
 }
